@@ -7,169 +7,155 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31BF6B7718AD4B7000ED1AD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF6B7618AD4B7000ED1AD7 /* UIKit.framework */; };
-		31BF6B7918AD4B7000ED1AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF6B7818AD4B7000ED1AD7 /* Foundation.framework */; };
-		31BF6B7B18AD4B7000ED1AD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF6B7A18AD4B7000ED1AD7 /* CoreGraphics.framework */; };
-		31BF6B7D18AD4B7000ED1AD7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF6B7C18AD4B7000ED1AD7 /* CoreData.framework */; };
-		31BF6B8318AD4B7000ED1AD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31BF6B8118AD4B7000ED1AD7 /* InfoPlist.strings */; };
-		31BF6B8518AD4B7000ED1AD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BF6B8418AD4B7000ED1AD7 /* main.m */; };
-		31BF6B8918AD4B7000ED1AD7 /* HVZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BF6B8818AD4B7000ED1AD7 /* HVZAppDelegate.m */; };
-		31BF6B8B18AD4B7000ED1AD7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BF6B8A18AD4B7000ED1AD7 /* Default.png */; };
-		31BF6B8D18AD4B7000ED1AD7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BF6B8C18AD4B7000ED1AD7 /* Default@2x.png */; };
-		31BF6B8F18AD4B7000ED1AD7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BF6B8E18AD4B7000ED1AD7 /* Default-568h@2x.png */; };
-		31BF6B9218AD4B7000ED1AD7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31BF6B9018AD4B7000ED1AD7 /* MainStoryboard.storyboard */; };
-		31BF6B9518AD4B7100ED1AD7 /* HVZApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31BF6B9318AD4B7000ED1AD7 /* HVZApp.xcdatamodeld */; };
-		31BF6B9818AD4B7100ED1AD7 /* HVZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BF6B9718AD4B7100ED1AD7 /* HVZMasterViewController.m */; };
-		31BF6B9B18AD4B7100ED1AD7 /* HVZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BF6B9A18AD4B7100ED1AD7 /* HVZDetailViewController.m */; };
-		31BF6BA318AD4B7100ED1AD7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF6BA218AD4B7100ED1AD7 /* SenTestingKit.framework */; };
-		31BF6BA418AD4B7100ED1AD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF6B7618AD4B7000ED1AD7 /* UIKit.framework */; };
-		31BF6BA518AD4B7100ED1AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF6B7818AD4B7000ED1AD7 /* Foundation.framework */; };
-		31BF6BA618AD4B7100ED1AD7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BF6B7C18AD4B7000ED1AD7 /* CoreData.framework */; };
-		31BF6BAE18AD4B7100ED1AD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31BF6BAC18AD4B7100ED1AD7 /* InfoPlist.strings */; };
-		31BF6BB118AD4B7100ED1AD7 /* HVZAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BF6BB018AD4B7100ED1AD7 /* HVZAppTests.m */; };
+		31FB266818AED9510095DEF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266718AED9510095DEF0 /* UIKit.framework */; };
+		31FB266A18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
+		31FB266C18AED9510095DEF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266B18AED9510095DEF0 /* CoreGraphics.framework */; };
+		31FB267218AED9510095DEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31FB267018AED9510095DEF0 /* InfoPlist.strings */; };
+		31FB267418AED9510095DEF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB267318AED9510095DEF0 /* main.m */; };
+		31FB267818AED9510095DEF0 /* HVZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB267718AED9510095DEF0 /* HVZAppDelegate.m */; };
+		31FB267A18AED9510095DEF0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 31FB267918AED9510095DEF0 /* Default.png */; };
+		31FB267C18AED9510095DEF0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31FB267B18AED9510095DEF0 /* Default@2x.png */; };
+		31FB267E18AED9510095DEF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31FB267D18AED9510095DEF0 /* Default-568h@2x.png */; };
+		31FB268118AED9510095DEF0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */; };
+		31FB268418AED9510095DEF0 /* HVZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB268318AED9510095DEF0 /* HVZViewController.m */; };
+		31FB268C18AED9510095DEF0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB268B18AED9510095DEF0 /* SenTestingKit.framework */; };
+		31FB268D18AED9510095DEF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266718AED9510095DEF0 /* UIKit.framework */; };
+		31FB268E18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
+		31FB269618AED9510095DEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31FB269418AED9510095DEF0 /* InfoPlist.strings */; };
+		31FB269918AED9510095DEF0 /* HVZAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB269818AED9510095DEF0 /* HVZAppTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		31BF6BA718AD4B7100ED1AD7 /* PBXContainerItemProxy */ = {
+		31FB268F18AED9510095DEF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 31BF6B6B18AD4B7000ED1AD7 /* Project object */;
+			containerPortal = 31FB265C18AED9500095DEF0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 31BF6B7218AD4B7000ED1AD7;
+			remoteGlobalIDString = 31FB266318AED9500095DEF0;
 			remoteInfo = HVZApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		31BF6B7318AD4B7000ED1AD7 /* HVZApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HVZApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		31BF6B7618AD4B7000ED1AD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		31BF6B7818AD4B7000ED1AD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		31BF6B7A18AD4B7000ED1AD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		31BF6B7C18AD4B7000ED1AD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		31BF6B8018AD4B7000ED1AD7 /* HVZApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HVZApp-Info.plist"; sourceTree = "<group>"; };
-		31BF6B8218AD4B7000ED1AD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		31BF6B8418AD4B7000ED1AD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		31BF6B8618AD4B7000ED1AD7 /* HVZApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HVZApp-Prefix.pch"; sourceTree = "<group>"; };
-		31BF6B8718AD4B7000ED1AD7 /* HVZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZAppDelegate.h; sourceTree = "<group>"; };
-		31BF6B8818AD4B7000ED1AD7 /* HVZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZAppDelegate.m; sourceTree = "<group>"; };
-		31BF6B8A18AD4B7000ED1AD7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		31BF6B8C18AD4B7000ED1AD7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		31BF6B8E18AD4B7000ED1AD7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		31BF6B9118AD4B7000ED1AD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		31BF6B9418AD4B7100ED1AD7 /* HVZApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HVZApp.xcdatamodel; sourceTree = "<group>"; };
-		31BF6B9618AD4B7100ED1AD7 /* HVZMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZMasterViewController.h; sourceTree = "<group>"; };
-		31BF6B9718AD4B7100ED1AD7 /* HVZMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZMasterViewController.m; sourceTree = "<group>"; };
-		31BF6B9918AD4B7100ED1AD7 /* HVZDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZDetailViewController.h; sourceTree = "<group>"; };
-		31BF6B9A18AD4B7100ED1AD7 /* HVZDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZDetailViewController.m; sourceTree = "<group>"; };
-		31BF6BA118AD4B7100ED1AD7 /* HVZAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HVZAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31BF6BA218AD4B7100ED1AD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		31BF6BAB18AD4B7100ED1AD7 /* HVZAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HVZAppTests-Info.plist"; sourceTree = "<group>"; };
-		31BF6BAD18AD4B7100ED1AD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		31BF6BAF18AD4B7100ED1AD7 /* HVZAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZAppTests.h; sourceTree = "<group>"; };
-		31BF6BB018AD4B7100ED1AD7 /* HVZAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZAppTests.m; sourceTree = "<group>"; };
+		31FB266418AED9510095DEF0 /* HVZApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HVZApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FB266718AED9510095DEF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		31FB266918AED9510095DEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31FB266B18AED9510095DEF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		31FB266F18AED9510095DEF0 /* HVZApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HVZApp-Info.plist"; sourceTree = "<group>"; };
+		31FB267118AED9510095DEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31FB267318AED9510095DEF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31FB267518AED9510095DEF0 /* HVZApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HVZApp-Prefix.pch"; sourceTree = "<group>"; };
+		31FB267618AED9510095DEF0 /* HVZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZAppDelegate.h; sourceTree = "<group>"; };
+		31FB267718AED9510095DEF0 /* HVZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZAppDelegate.m; sourceTree = "<group>"; };
+		31FB267918AED9510095DEF0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		31FB267B18AED9510095DEF0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		31FB267D18AED9510095DEF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		31FB268018AED9510095DEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		31FB268218AED9510095DEF0 /* HVZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZViewController.h; sourceTree = "<group>"; };
+		31FB268318AED9510095DEF0 /* HVZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZViewController.m; sourceTree = "<group>"; };
+		31FB268A18AED9510095DEF0 /* HVZAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HVZAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FB268B18AED9510095DEF0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		31FB269318AED9510095DEF0 /* HVZAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HVZAppTests-Info.plist"; sourceTree = "<group>"; };
+		31FB269518AED9510095DEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31FB269718AED9510095DEF0 /* HVZAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZAppTests.h; sourceTree = "<group>"; };
+		31FB269818AED9510095DEF0 /* HVZAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZAppTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		31BF6B7018AD4B7000ED1AD7 /* Frameworks */ = {
+		31FB266118AED9500095DEF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31BF6B7718AD4B7000ED1AD7 /* UIKit.framework in Frameworks */,
-				31BF6B7918AD4B7000ED1AD7 /* Foundation.framework in Frameworks */,
-				31BF6B7B18AD4B7000ED1AD7 /* CoreGraphics.framework in Frameworks */,
-				31BF6B7D18AD4B7000ED1AD7 /* CoreData.framework in Frameworks */,
+				31FB266818AED9510095DEF0 /* UIKit.framework in Frameworks */,
+				31FB266A18AED9510095DEF0 /* Foundation.framework in Frameworks */,
+				31FB266C18AED9510095DEF0 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31BF6B9D18AD4B7100ED1AD7 /* Frameworks */ = {
+		31FB268618AED9510095DEF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31BF6BA318AD4B7100ED1AD7 /* SenTestingKit.framework in Frameworks */,
-				31BF6BA418AD4B7100ED1AD7 /* UIKit.framework in Frameworks */,
-				31BF6BA518AD4B7100ED1AD7 /* Foundation.framework in Frameworks */,
-				31BF6BA618AD4B7100ED1AD7 /* CoreData.framework in Frameworks */,
+				31FB268C18AED9510095DEF0 /* SenTestingKit.framework in Frameworks */,
+				31FB268D18AED9510095DEF0 /* UIKit.framework in Frameworks */,
+				31FB268E18AED9510095DEF0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31BF6B6A18AD4B7000ED1AD7 = {
+		31FB265B18AED9500095DEF0 = {
 			isa = PBXGroup;
 			children = (
-				31BF6B7E18AD4B7000ED1AD7 /* HVZApp */,
-				31BF6BA918AD4B7100ED1AD7 /* HVZAppTests */,
-				31BF6B7518AD4B7000ED1AD7 /* Frameworks */,
-				31BF6B7418AD4B7000ED1AD7 /* Products */,
+				31FB266D18AED9510095DEF0 /* HVZApp */,
+				31FB269118AED9510095DEF0 /* HVZAppTests */,
+				31FB266618AED9510095DEF0 /* Frameworks */,
+				31FB266518AED9510095DEF0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		31BF6B7418AD4B7000ED1AD7 /* Products */ = {
+		31FB266518AED9510095DEF0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31BF6B7318AD4B7000ED1AD7 /* HVZApp.app */,
-				31BF6BA118AD4B7100ED1AD7 /* HVZAppTests.octest */,
+				31FB266418AED9510095DEF0 /* HVZApp.app */,
+				31FB268A18AED9510095DEF0 /* HVZAppTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		31BF6B7518AD4B7000ED1AD7 /* Frameworks */ = {
+		31FB266618AED9510095DEF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				31BF6B7618AD4B7000ED1AD7 /* UIKit.framework */,
-				31BF6B7818AD4B7000ED1AD7 /* Foundation.framework */,
-				31BF6B7A18AD4B7000ED1AD7 /* CoreGraphics.framework */,
-				31BF6B7C18AD4B7000ED1AD7 /* CoreData.framework */,
-				31BF6BA218AD4B7100ED1AD7 /* SenTestingKit.framework */,
+				31FB266718AED9510095DEF0 /* UIKit.framework */,
+				31FB266918AED9510095DEF0 /* Foundation.framework */,
+				31FB266B18AED9510095DEF0 /* CoreGraphics.framework */,
+				31FB268B18AED9510095DEF0 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		31BF6B7E18AD4B7000ED1AD7 /* HVZApp */ = {
+		31FB266D18AED9510095DEF0 /* HVZApp */ = {
 			isa = PBXGroup;
 			children = (
-				31BF6B8718AD4B7000ED1AD7 /* HVZAppDelegate.h */,
-				31BF6B8818AD4B7000ED1AD7 /* HVZAppDelegate.m */,
-				31BF6B9018AD4B7000ED1AD7 /* MainStoryboard.storyboard */,
-				31BF6B9618AD4B7100ED1AD7 /* HVZMasterViewController.h */,
-				31BF6B9718AD4B7100ED1AD7 /* HVZMasterViewController.m */,
-				31BF6B9918AD4B7100ED1AD7 /* HVZDetailViewController.h */,
-				31BF6B9A18AD4B7100ED1AD7 /* HVZDetailViewController.m */,
-				31BF6B9318AD4B7000ED1AD7 /* HVZApp.xcdatamodeld */,
-				31BF6B7F18AD4B7000ED1AD7 /* Supporting Files */,
+				31FB267618AED9510095DEF0 /* HVZAppDelegate.h */,
+				31FB267718AED9510095DEF0 /* HVZAppDelegate.m */,
+				31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */,
+				31FB268218AED9510095DEF0 /* HVZViewController.h */,
+				31FB268318AED9510095DEF0 /* HVZViewController.m */,
+				31FB266E18AED9510095DEF0 /* Supporting Files */,
 			);
 			path = HVZApp;
 			sourceTree = "<group>";
 		};
-		31BF6B7F18AD4B7000ED1AD7 /* Supporting Files */ = {
+		31FB266E18AED9510095DEF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				31BF6B8018AD4B7000ED1AD7 /* HVZApp-Info.plist */,
-				31BF6B8118AD4B7000ED1AD7 /* InfoPlist.strings */,
-				31BF6B8418AD4B7000ED1AD7 /* main.m */,
-				31BF6B8618AD4B7000ED1AD7 /* HVZApp-Prefix.pch */,
-				31BF6B8A18AD4B7000ED1AD7 /* Default.png */,
-				31BF6B8C18AD4B7000ED1AD7 /* Default@2x.png */,
-				31BF6B8E18AD4B7000ED1AD7 /* Default-568h@2x.png */,
+				31FB266F18AED9510095DEF0 /* HVZApp-Info.plist */,
+				31FB267018AED9510095DEF0 /* InfoPlist.strings */,
+				31FB267318AED9510095DEF0 /* main.m */,
+				31FB267518AED9510095DEF0 /* HVZApp-Prefix.pch */,
+				31FB267918AED9510095DEF0 /* Default.png */,
+				31FB267B18AED9510095DEF0 /* Default@2x.png */,
+				31FB267D18AED9510095DEF0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		31BF6BA918AD4B7100ED1AD7 /* HVZAppTests */ = {
+		31FB269118AED9510095DEF0 /* HVZAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				31BF6BAF18AD4B7100ED1AD7 /* HVZAppTests.h */,
-				31BF6BB018AD4B7100ED1AD7 /* HVZAppTests.m */,
-				31BF6BAA18AD4B7100ED1AD7 /* Supporting Files */,
+				31FB269718AED9510095DEF0 /* HVZAppTests.h */,
+				31FB269818AED9510095DEF0 /* HVZAppTests.m */,
+				31FB269218AED9510095DEF0 /* Supporting Files */,
 			);
 			path = HVZAppTests;
 			sourceTree = "<group>";
 		};
-		31BF6BAA18AD4B7100ED1AD7 /* Supporting Files */ = {
+		31FB269218AED9510095DEF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				31BF6BAB18AD4B7100ED1AD7 /* HVZAppTests-Info.plist */,
-				31BF6BAC18AD4B7100ED1AD7 /* InfoPlist.strings */,
+				31FB269318AED9510095DEF0 /* HVZAppTests-Info.plist */,
+				31FB269418AED9510095DEF0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,13 +163,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		31BF6B7218AD4B7000ED1AD7 /* HVZApp */ = {
+		31FB266318AED9500095DEF0 /* HVZApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31BF6BB418AD4B7100ED1AD7 /* Build configuration list for PBXNativeTarget "HVZApp" */;
+			buildConfigurationList = 31FB269C18AED9510095DEF0 /* Build configuration list for PBXNativeTarget "HVZApp" */;
 			buildPhases = (
-				31BF6B6F18AD4B7000ED1AD7 /* Sources */,
-				31BF6B7018AD4B7000ED1AD7 /* Frameworks */,
-				31BF6B7118AD4B7000ED1AD7 /* Resources */,
+				31FB266018AED9500095DEF0 /* Sources */,
+				31FB266118AED9500095DEF0 /* Frameworks */,
+				31FB266218AED9500095DEF0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -191,81 +177,81 @@
 			);
 			name = HVZApp;
 			productName = HVZApp;
-			productReference = 31BF6B7318AD4B7000ED1AD7 /* HVZApp.app */;
+			productReference = 31FB266418AED9510095DEF0 /* HVZApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		31BF6BA018AD4B7100ED1AD7 /* HVZAppTests */ = {
+		31FB268918AED9510095DEF0 /* HVZAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31BF6BB718AD4B7100ED1AD7 /* Build configuration list for PBXNativeTarget "HVZAppTests" */;
+			buildConfigurationList = 31FB269F18AED9510095DEF0 /* Build configuration list for PBXNativeTarget "HVZAppTests" */;
 			buildPhases = (
-				31BF6B9C18AD4B7100ED1AD7 /* Sources */,
-				31BF6B9D18AD4B7100ED1AD7 /* Frameworks */,
-				31BF6B9E18AD4B7100ED1AD7 /* Resources */,
-				31BF6B9F18AD4B7100ED1AD7 /* ShellScript */,
+				31FB268518AED9510095DEF0 /* Sources */,
+				31FB268618AED9510095DEF0 /* Frameworks */,
+				31FB268718AED9510095DEF0 /* Resources */,
+				31FB268818AED9510095DEF0 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				31BF6BA818AD4B7100ED1AD7 /* PBXTargetDependency */,
+				31FB269018AED9510095DEF0 /* PBXTargetDependency */,
 			);
 			name = HVZAppTests;
 			productName = HVZAppTests;
-			productReference = 31BF6BA118AD4B7100ED1AD7 /* HVZAppTests.octest */;
+			productReference = 31FB268A18AED9510095DEF0 /* HVZAppTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		31BF6B6B18AD4B7000ED1AD7 /* Project object */ = {
+		31FB265C18AED9500095DEF0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = HVZ;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = LSD;
 			};
-			buildConfigurationList = 31BF6B6E18AD4B7000ED1AD7 /* Build configuration list for PBXProject "HVZApp" */;
+			buildConfigurationList = 31FB265F18AED9500095DEF0 /* Build configuration list for PBXProject "HVZApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 31BF6B6A18AD4B7000ED1AD7;
-			productRefGroup = 31BF6B7418AD4B7000ED1AD7 /* Products */;
+			mainGroup = 31FB265B18AED9500095DEF0;
+			productRefGroup = 31FB266518AED9510095DEF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31BF6B7218AD4B7000ED1AD7 /* HVZApp */,
-				31BF6BA018AD4B7100ED1AD7 /* HVZAppTests */,
+				31FB266318AED9500095DEF0 /* HVZApp */,
+				31FB268918AED9510095DEF0 /* HVZAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		31BF6B7118AD4B7000ED1AD7 /* Resources */ = {
+		31FB266218AED9500095DEF0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31BF6B8318AD4B7000ED1AD7 /* InfoPlist.strings in Resources */,
-				31BF6B8B18AD4B7000ED1AD7 /* Default.png in Resources */,
-				31BF6B8D18AD4B7000ED1AD7 /* Default@2x.png in Resources */,
-				31BF6B8F18AD4B7000ED1AD7 /* Default-568h@2x.png in Resources */,
-				31BF6B9218AD4B7000ED1AD7 /* MainStoryboard.storyboard in Resources */,
+				31FB267218AED9510095DEF0 /* InfoPlist.strings in Resources */,
+				31FB267A18AED9510095DEF0 /* Default.png in Resources */,
+				31FB267C18AED9510095DEF0 /* Default@2x.png in Resources */,
+				31FB267E18AED9510095DEF0 /* Default-568h@2x.png in Resources */,
+				31FB268118AED9510095DEF0 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31BF6B9E18AD4B7100ED1AD7 /* Resources */ = {
+		31FB268718AED9510095DEF0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31BF6BAE18AD4B7100ED1AD7 /* InfoPlist.strings in Resources */,
+				31FB269618AED9510095DEF0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31BF6B9F18AD4B7100ED1AD7 /* ShellScript */ = {
+		31FB268818AED9510095DEF0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,57 +267,55 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		31BF6B6F18AD4B7000ED1AD7 /* Sources */ = {
+		31FB266018AED9500095DEF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31BF6B8518AD4B7000ED1AD7 /* main.m in Sources */,
-				31BF6B8918AD4B7000ED1AD7 /* HVZAppDelegate.m in Sources */,
-				31BF6B9518AD4B7100ED1AD7 /* HVZApp.xcdatamodeld in Sources */,
-				31BF6B9818AD4B7100ED1AD7 /* HVZMasterViewController.m in Sources */,
-				31BF6B9B18AD4B7100ED1AD7 /* HVZDetailViewController.m in Sources */,
+				31FB267418AED9510095DEF0 /* main.m in Sources */,
+				31FB267818AED9510095DEF0 /* HVZAppDelegate.m in Sources */,
+				31FB268418AED9510095DEF0 /* HVZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31BF6B9C18AD4B7100ED1AD7 /* Sources */ = {
+		31FB268518AED9510095DEF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31BF6BB118AD4B7100ED1AD7 /* HVZAppTests.m in Sources */,
+				31FB269918AED9510095DEF0 /* HVZAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		31BF6BA818AD4B7100ED1AD7 /* PBXTargetDependency */ = {
+		31FB269018AED9510095DEF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 31BF6B7218AD4B7000ED1AD7 /* HVZApp */;
-			targetProxy = 31BF6BA718AD4B7100ED1AD7 /* PBXContainerItemProxy */;
+			target = 31FB266318AED9500095DEF0 /* HVZApp */;
+			targetProxy = 31FB268F18AED9510095DEF0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		31BF6B8118AD4B7000ED1AD7 /* InfoPlist.strings */ = {
+		31FB267018AED9510095DEF0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				31BF6B8218AD4B7000ED1AD7 /* en */,
+				31FB267118AED9510095DEF0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		31BF6B9018AD4B7000ED1AD7 /* MainStoryboard.storyboard */ = {
+		31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				31BF6B9118AD4B7000ED1AD7 /* en */,
+				31FB268018AED9510095DEF0 /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
-		31BF6BAC18AD4B7100ED1AD7 /* InfoPlist.strings */ = {
+		31FB269418AED9510095DEF0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				31BF6BAD18AD4B7100ED1AD7 /* en */,
+				31FB269518AED9510095DEF0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -339,7 +323,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		31BF6BB218AD4B7100ED1AD7 /* Debug */ = {
+		31FB269A18AED9510095DEF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -370,7 +354,7 @@
 			};
 			name = Debug;
 		};
-		31BF6BB318AD4B7100ED1AD7 /* Release */ = {
+		31FB269B18AED9510095DEF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -395,7 +379,7 @@
 			};
 			name = Release;
 		};
-		31BF6BB518AD4B7100ED1AD7 /* Debug */ = {
+		31FB269D18AED9510095DEF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -406,7 +390,7 @@
 			};
 			name = Debug;
 		};
-		31BF6BB618AD4B7100ED1AD7 /* Release */ = {
+		31FB269E18AED9510095DEF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -417,7 +401,7 @@
 			};
 			name = Release;
 		};
-		31BF6BB818AD4B7100ED1AD7 /* Debug */ = {
+		31FB26A018AED9510095DEF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HVZApp.app/HVZApp";
@@ -434,7 +418,7 @@
 			};
 			name = Debug;
 		};
-		31BF6BB918AD4B7100ED1AD7 /* Release */ = {
+		31FB26A118AED9510095DEF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HVZApp.app/HVZApp";
@@ -454,45 +438,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31BF6B6E18AD4B7000ED1AD7 /* Build configuration list for PBXProject "HVZApp" */ = {
+		31FB265F18AED9500095DEF0 /* Build configuration list for PBXProject "HVZApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31BF6BB218AD4B7100ED1AD7 /* Debug */,
-				31BF6BB318AD4B7100ED1AD7 /* Release */,
+				31FB269A18AED9510095DEF0 /* Debug */,
+				31FB269B18AED9510095DEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31BF6BB418AD4B7100ED1AD7 /* Build configuration list for PBXNativeTarget "HVZApp" */ = {
+		31FB269C18AED9510095DEF0 /* Build configuration list for PBXNativeTarget "HVZApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31BF6BB518AD4B7100ED1AD7 /* Debug */,
-				31BF6BB618AD4B7100ED1AD7 /* Release */,
+				31FB269D18AED9510095DEF0 /* Debug */,
+				31FB269E18AED9510095DEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		31BF6BB718AD4B7100ED1AD7 /* Build configuration list for PBXNativeTarget "HVZAppTests" */ = {
+		31FB269F18AED9510095DEF0 /* Build configuration list for PBXNativeTarget "HVZAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31BF6BB818AD4B7100ED1AD7 /* Debug */,
-				31BF6BB918AD4B7100ED1AD7 /* Release */,
+				31FB26A018AED9510095DEF0 /* Debug */,
+				31FB26A118AED9510095DEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		31BF6B9318AD4B7000ED1AD7 /* HVZApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				31BF6B9418AD4B7100ED1AD7 /* HVZApp.xcdatamodel */,
-			);
-			currentVersion = 31BF6B9418AD4B7100ED1AD7 /* HVZApp.xcdatamodel */;
-			path = HVZApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 31BF6B6B18AD4B7000ED1AD7 /* Project object */;
+	rootObject = 31FB265C18AED9500095DEF0 /* Project object */;
 }

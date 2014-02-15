@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31BF6B7218AD4B7000ED1AD7"
+               BlueprintIdentifier = "31FB266318AED9500095DEF0"
                BuildableName = "HVZApp.app"
                BlueprintName = "HVZApp"
                ReferencedContainer = "container:HVZApp.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31BF6BA018AD4B7100ED1AD7"
+               BlueprintIdentifier = "31FB268918AED9510095DEF0"
                BuildableName = "HVZAppTests.octest"
                BlueprintName = "HVZAppTests"
                ReferencedContainer = "container:HVZApp.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31BF6B7218AD4B7000ED1AD7"
+            BlueprintIdentifier = "31FB266318AED9500095DEF0"
             BuildableName = "HVZApp.app"
             BlueprintName = "HVZApp"
             ReferencedContainer = "container:HVZApp.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31BF6B7218AD4B7000ED1AD7"
+            BlueprintIdentifier = "31FB266318AED9500095DEF0"
             BuildableName = "HVZApp.app"
             BlueprintName = "HVZApp"
             ReferencedContainer = "container:HVZApp.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31BF6B7218AD4B7000ED1AD7"
+            BlueprintIdentifier = "31FB266318AED9500095DEF0"
             BuildableName = "HVZApp.app"
             BlueprintName = "HVZApp"
             ReferencedContainer = "container:HVZApp.xcodeproj">
