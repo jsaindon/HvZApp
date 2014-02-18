@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3111D4D818B2FDBC00820250 /* HVZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3111D4D718B2FDBC00820250 /* HVZSettingsViewController.m */; };
 		31FB266818AED9510095DEF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266718AED9510095DEF0 /* UIKit.framework */; };
 		31FB266A18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
 		31FB266C18AED9510095DEF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266B18AED9510095DEF0 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3111D4D618B2FDBC00820250 /* HVZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZSettingsViewController.h; sourceTree = "<group>"; };
+		3111D4D718B2FDBC00820250 /* HVZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZSettingsViewController.m; sourceTree = "<group>"; };
 		31FB266418AED9510095DEF0 /* HVZApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HVZApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FB266718AED9510095DEF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		31FB266918AED9510095DEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +90,8 @@
 		31FB265B18AED9500095DEF0 = {
 			isa = PBXGroup;
 			children = (
+				3111D4D618B2FDBC00820250 /* HVZSettingsViewController.h */,
+				3111D4D718B2FDBC00820250 /* HVZSettingsViewController.m */,
 				31FB266D18AED9510095DEF0 /* HVZApp */,
 				31FB269118AED9510095DEF0 /* HVZAppTests */,
 				31FB266618AED9510095DEF0 /* Frameworks */,
@@ -274,6 +279,7 @@
 				31FB267418AED9510095DEF0 /* main.m in Sources */,
 				31FB267818AED9510095DEF0 /* HVZAppDelegate.m in Sources */,
 				31FB268418AED9510095DEF0 /* HVZViewController.m in Sources */,
+				3111D4D818B2FDBC00820250 /* HVZSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +460,7 @@
 				31FB269E18AED9510095DEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31FB269F18AED9510095DEF0 /* Build configuration list for PBXNativeTarget "HVZAppTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +469,7 @@
 				31FB26A118AED9510095DEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

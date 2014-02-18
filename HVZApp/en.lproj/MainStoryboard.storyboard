@@ -4,16 +4,72 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Settings-->
+        <!--Settings View Controller - Settings-->
         <scene sceneID="WsD-vX-409">
             <objects>
-                <viewController title="Settings" id="x9i-0o-8vg" sceneMemberID="viewController">
+                <viewController title="Settings" id="x9i-0o-8vg" customClass="HVZSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yke-hg-Cqb">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Website Email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CRr-op-qSw">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uf3-Sb-RdH">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-k9-lvV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="7Dc-rT-9pr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SubmitCreds:" destination="x9i-0o-8vg" eventType="touchUpInside" id="IPV-j9-DHC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvP-Sp-0JP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ir-6P-NOo">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Ir-6P-NOo" firstAttribute="leading" secondItem="wvP-Sp-0JP" secondAttribute="leading" type="default" id="1AE-Ga-loW"/>
+                            <constraint firstItem="CRr-op-qSw" firstAttribute="leading" secondItem="yke-hg-Cqb" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1Zp-AV-1V8"/>
+                            <constraint firstItem="wUN-k9-lvV" firstAttribute="top" secondItem="uf3-Sb-RdH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7nO-0c-m56"/>
+                            <constraint firstItem="wvP-Sp-0JP" firstAttribute="centerX" secondItem="wUN-k9-lvV" secondAttribute="centerX" type="default" id="CKr-c4-hCS"/>
+                            <constraint firstAttribute="trailing" secondItem="CRr-op-qSw" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="FYw-Kn-Zrc"/>
+                            <constraint firstItem="wvP-Sp-0JP" firstAttribute="top" secondItem="yke-hg-Cqb" secondAttribute="top" constant="190" id="LBe-Ba-gV6"/>
+                            <constraint firstItem="5Ir-6P-NOo" firstAttribute="top" secondItem="wvP-Sp-0JP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Pdv-RB-aGA"/>
+                            <constraint firstItem="uf3-Sb-RdH" firstAttribute="leading" secondItem="yke-hg-Cqb" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Qpj-el-Gfn"/>
+                            <constraint firstItem="uf3-Sb-RdH" firstAttribute="top" secondItem="CRr-op-qSw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="byH-OZ-lxx"/>
+                            <constraint firstAttribute="trailing" secondItem="uf3-Sb-RdH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="daC-aO-VTE"/>
+                            <constraint firstItem="CRr-op-qSw" firstAttribute="top" secondItem="yke-hg-Cqb" secondAttribute="top" constant="20" symbolic="YES" type="default" id="qPQ-tM-luq"/>
+                            <constraint firstItem="wUN-k9-lvV" firstAttribute="centerX" secondItem="uf3-Sb-RdH" secondAttribute="centerX" type="default" id="wfo-S4-259"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="hVG-Z6-ciZ"/>
+                    <connections>
+                        <outlet property="readEmail" destination="CRr-op-qSw" id="dNb-XD-uyf"/>
+                        <outlet property="readPassword" destination="uf3-Sb-RdH" id="zrf-Gd-DPr"/>
+                        <outlet property="showEmail" destination="wvP-Sp-0JP" id="M4o-gv-xNu"/>
+                        <outlet property="showPassword" destination="5Ir-6P-NOo" id="52e-O2-gro"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEa-3m-VCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,7 +233,7 @@
         <!--Table View Controller - Notifications-->
         <scene sceneID="xBz-3T-qYY">
             <objects>
-                <tableViewController id="pO0-ar-LPM" sceneMemberID="viewController">
+                <tableViewController title="Notifications" id="pO0-ar-LPM" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Cd0-wW-rTB">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,18 +326,6 @@
             <point key="canvasLocation" x="47" y="57"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="HVZViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HVZViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="StartTimer:"/>
-                <relationship kind="outlet" name="runClock" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
