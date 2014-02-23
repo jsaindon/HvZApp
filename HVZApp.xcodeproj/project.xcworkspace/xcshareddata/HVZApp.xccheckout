@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AC2F8062-7543-48C6-991B-0B45FD865E9E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HVZApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6D41B9D4-6952-47AB-9A48-D1CD2CEDC5E7</key>
+		<string>https://github.com/jsaindon/HvZApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HVZApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6D41B9D4-6952-47AB-9A48-D1CD2CEDC5E7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jsaindon/HvZApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6D41B9D4-6952-47AB-9A48-D1CD2CEDC5E7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6D41B9D4-6952-47AB-9A48-D1CD2CEDC5E7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>currHvZApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

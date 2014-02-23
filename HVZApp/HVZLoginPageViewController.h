@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HVZLoginPageViewController : UIViewController
+@interface HVZLoginPageViewController : UIViewController {
+    NSDictionary *credentialsDictionary;
+}
+
+// Username and Password fields
+@property (weak, nonatomic) IBOutlet UITextField *usernameInput;
+@property (weak, nonatomic) IBOutlet UITextField *passwordInput;
+
+// Storage components for Username and Password
+@property (nonatomic) IBOutlet NSString *username;
+@property (nonatomic) IBOutlet NSString *password;
+
+// Submit Button
+- (IBAction)submitButton:(id)sender;
+
+// Close Keyboard
+-(void)touchesBegan:(NSSet*)touches withEvent:(UIEvent *)event;
 
 @end

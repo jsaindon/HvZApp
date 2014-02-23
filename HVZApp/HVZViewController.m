@@ -13,7 +13,7 @@
 @end
 
 @implementation HVZViewController
-@synthesize runClock;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -26,7 +26,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)StartTimer:(id)sender {
-    self.runClock.text = @"10:00";
+- (IBAction)StartTimer {
+    startingTime = 10;
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countDown) userInfo:nil repeats:YES];
 }
+
+- (void)countDown {
+    startingTime -= 1;
+    seconds.text = [NSString stringWithFormat:@"%i", startingTime];
+    if (startingTime == 0) {
+        [timer invalidate];
+    }
+}
+
 @end

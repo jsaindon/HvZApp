@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HVZViewController : UIViewController
+@interface HVZViewController : UIViewController {
+    IBOutlet UILabel *seconds;
+    NSTimer *timer;
+    int startingTime;
+}
+
 // Main page
-- (IBAction)StartTimer:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *runClock;
+- (IBAction)StartTimer;
 
 // Settings page
 

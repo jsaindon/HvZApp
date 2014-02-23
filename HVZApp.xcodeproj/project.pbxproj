@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3111D4D818B2FDBC00820250 /* HVZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3111D4D718B2FDBC00820250 /* HVZSettingsViewController.m */; };
 		31FB266818AED9510095DEF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266718AED9510095DEF0 /* UIKit.framework */; };
 		31FB266A18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
 		31FB266C18AED9510095DEF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266B18AED9510095DEF0 /* CoreGraphics.framework */; };
@@ -24,6 +23,7 @@
 		31FB268E18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
 		31FB269618AED9510095DEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31FB269418AED9510095DEF0 /* InfoPlist.strings */; };
 		31FB269918AED9510095DEF0 /* HVZAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB269818AED9510095DEF0 /* HVZAppTests.m */; };
+		DA8BD36B18B4327F00E577D5 /* HVZLoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3111D4D618B2FDBC00820250 /* HVZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZSettingsViewController.h; sourceTree = "<group>"; };
-		3111D4D718B2FDBC00820250 /* HVZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZSettingsViewController.m; sourceTree = "<group>"; };
 		31FB266418AED9510095DEF0 /* HVZApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HVZApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FB266718AED9510095DEF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		31FB266918AED9510095DEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +59,8 @@
 		31FB269518AED9510095DEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31FB269718AED9510095DEF0 /* HVZAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZAppTests.h; sourceTree = "<group>"; };
 		31FB269818AED9510095DEF0 /* HVZAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZAppTests.m; sourceTree = "<group>"; };
+		DA8BD36918B4327F00E577D5 /* HVZLoginPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZLoginPageViewController.h; sourceTree = "<group>"; };
+		DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZLoginPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +90,6 @@
 		31FB265B18AED9500095DEF0 = {
 			isa = PBXGroup;
 			children = (
-				3111D4D618B2FDBC00820250 /* HVZSettingsViewController.h */,
-				3111D4D718B2FDBC00820250 /* HVZSettingsViewController.m */,
 				31FB266D18AED9510095DEF0 /* HVZApp */,
 				31FB269118AED9510095DEF0 /* HVZAppTests */,
 				31FB266618AED9510095DEF0 /* Frameworks */,
@@ -128,6 +126,8 @@
 				31FB268218AED9510095DEF0 /* HVZViewController.h */,
 				31FB268318AED9510095DEF0 /* HVZViewController.m */,
 				31FB266E18AED9510095DEF0 /* Supporting Files */,
+				DA8BD36918B4327F00E577D5 /* HVZLoginPageViewController.h */,
+				DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */,
 			);
 			path = HVZApp;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				31FB267418AED9510095DEF0 /* main.m in Sources */,
 				31FB267818AED9510095DEF0 /* HVZAppDelegate.m in Sources */,
 				31FB268418AED9510095DEF0 /* HVZViewController.m in Sources */,
-				3111D4D818B2FDBC00820250 /* HVZSettingsViewController.m in Sources */,
+				DA8BD36B18B4327F00E577D5 /* HVZLoginPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
