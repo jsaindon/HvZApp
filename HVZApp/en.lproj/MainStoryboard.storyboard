@@ -95,7 +95,7 @@
                                     <segue destination="pO0-ar-LPM" kind="push" identifier="TableLink" id="VmH-Fp-v2v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9C-tR-72t">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="TimerButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9C-tR-72t">
                                 <rect key="frame" x="152" y="390" width="148" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Timer">
@@ -109,7 +109,7 @@
                                     <action selector="StartTimer" destination="2" eventType="touchUpInside" id="bJ6-ZB-xm4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sO-FV-lBn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sO-FV-lBn">
                                 <rect key="frame" x="20" y="390" width="124" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="Q1a-8k-pUZ"/>
@@ -186,6 +186,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Main Page" id="eyc-yk-5Mx"/>
                     <connections>
+                        <outlet property="TimerButton" destination="X9C-tR-72t" id="kLL-EY-qx6"/>
                         <outlet property="seconds" destination="3sO-FV-lBn" id="K6M-WU-gjc"/>
                     </connections>
                 </viewController>

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+const double STUN_TIME;
+
 @interface HVZViewController : UIViewController {
     IBOutlet UILabel *seconds;
     NSTimer *timer;
@@ -16,6 +18,9 @@
 
 // Main page
 - (IBAction)StartTimer;
+@property (weak, nonatomic) IBOutlet UIButton *TimerButton;
+
+
 
 // Settings page
 
