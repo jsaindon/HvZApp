@@ -12,6 +12,9 @@
     NSDictionary *credentialsDictionary;
 }
 
+// Shows status of web connection attempt
+@property (weak, nonatomic) IBOutlet UILabel *StatusLine;
+
 // Username and Password fields
 @property (weak, nonatomic) IBOutlet UITextField *usernameInput;
 @property (weak, nonatomic) IBOutlet UITextField *passwordInput;

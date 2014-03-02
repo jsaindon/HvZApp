@@ -357,6 +357,17 @@
                                     <action selector="submitButton:" destination="ImE-DJ-0ss" eventType="touchUpInside" id="NlP-Y4-Ojl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMT-h7-pg0">
+                                <rect key="frame" x="71" y="309" width="178" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="RoP-Ce-Tl7"/>
+                                    <constraint firstAttribute="width" constant="178" id="cfm-jr-3Fd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -366,12 +377,15 @@
                             <constraint firstAttribute="trailing" secondItem="xAQ-5f-YHQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="JFz-ew-NjA"/>
                             <constraint firstItem="RX5-4j-mRY" firstAttribute="top" secondItem="DQB-nl-sL3" secondAttribute="top" constant="110" id="b9W-1W-IcD"/>
                             <constraint firstItem="xAQ-5f-YHQ" firstAttribute="top" secondItem="DQB-nl-sL3" secondAttribute="top" constant="62" id="h2R-XW-BfH"/>
+                            <constraint firstAttribute="bottom" secondItem="WMT-h7-pg0" secondAttribute="bottom" constant="165" id="huK-bF-uAC"/>
+                            <constraint firstItem="WMT-h7-pg0" firstAttribute="centerX" secondItem="Rwm-ad-PJP" secondAttribute="centerX" type="default" id="juy-iw-zaX"/>
                             <constraint firstItem="RX5-4j-mRY" firstAttribute="trailing" secondItem="xAQ-5f-YHQ" secondAttribute="trailing" type="default" id="ljt-Xx-Rrx"/>
                             <constraint firstItem="RX5-4j-mRY" firstAttribute="leading" secondItem="xAQ-5f-YHQ" secondAttribute="leading" type="default" id="mlc-Ph-D0r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login Page" id="iJA-0a-SUw"/>
                     <connections>
+                        <outlet property="StatusLine" destination="WMT-h7-pg0" id="hCC-On-Xtu"/>
                         <outlet property="passwordInput" destination="RX5-4j-mRY" id="W8E-Gj-HYz"/>
                         <outlet property="usernameInput" destination="xAQ-5f-YHQ" id="viw-tJ-luU"/>
                         <segue destination="2" kind="push" identifier="loginCorrect" id="IVe-Kp-bw7"/>
