@@ -23,6 +23,8 @@
 		31FB268E18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
 		31FB269618AED9510095DEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31FB269418AED9510095DEF0 /* InfoPlist.strings */; };
 		31FB269918AED9510095DEF0 /* HVZAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB269818AED9510095DEF0 /* HVZAppTests.m */; };
+		DA5C989318C2762700D391F8 /* HVZQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5C989218C2762700D391F8 /* HVZQRViewController.m */; };
+		DA5C989518C2789900D391F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5C989418C2789900D391F8 /* AVFoundation.framework */; };
 		DA8BD36B18B4327F00E577D5 /* HVZLoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */; };
 		DAB7A42318B9BB6A0018D85B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A40B18B9BB6A0018D85B /* NSObject+SBJson.m */; };
 		DAB7A42418B9BB6A0018D85B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A40E18B9BB6A0018D85B /* SBJsonParser.m */; };
@@ -86,6 +88,9 @@
 		31FB269518AED9510095DEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31FB269718AED9510095DEF0 /* HVZAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZAppTests.h; sourceTree = "<group>"; };
 		31FB269818AED9510095DEF0 /* HVZAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZAppTests.m; sourceTree = "<group>"; };
+		DA5C989118C2762700D391F8 /* HVZQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZQRViewController.h; sourceTree = "<group>"; };
+		DA5C989218C2762700D391F8 /* HVZQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZQRViewController.m; sourceTree = "<group>"; };
+		DA5C989418C2789900D391F8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DA8BD36918B4327F00E577D5 /* HVZLoginPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZLoginPageViewController.h; sourceTree = "<group>"; };
 		DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZLoginPageViewController.m; sourceTree = "<group>"; };
 		DAB7A40A18B9BB6A0018D85B /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -148,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5C989518C2789900D391F8 /* AVFoundation.framework in Frameworks */,
 				DAB7A76318B9C44D0018D85B /* libz.dylib in Frameworks */,
 				DAB7A76118B9C42C0018D85B /* libxml2.dylib in Frameworks */,
 				DAB7A75718B9C15A0018D85B /* MobileCoreServices.framework in Frameworks */,
@@ -197,6 +203,7 @@
 		31FB266618AED9510095DEF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA5C989418C2789900D391F8 /* AVFoundation.framework */,
 				DAB7A76218B9C44D0018D85B /* libz.dylib */,
 				DAB7A75F18B9C4040018D85B /* SystemConfiguration.framework */,
 				DAB7A75D18B9C3FB0018D85B /* CFNetwork.framework */,
@@ -219,6 +226,8 @@
 				31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */,
 				31FB268218AED9510095DEF0 /* HVZViewController.h */,
 				31FB268318AED9510095DEF0 /* HVZViewController.m */,
+				DA5C989118C2762700D391F8 /* HVZQRViewController.h */,
+				DA5C989218C2762700D391F8 /* HVZQRViewController.m */,
 				31FB266E18AED9510095DEF0 /* Supporting Files */,
 				DA8BD36918B4327F00E577D5 /* HVZLoginPageViewController.h */,
 				DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */,
@@ -449,6 +458,7 @@
 				DAB7A75118B9BC8F0018D85B /* ASIInputStream.m in Sources */,
 				DAB7A42D18B9BB6A0018D85B /* SBJsonUTF8Stream.m in Sources */,
 				DAB7A42518B9BB6A0018D85B /* SBJsonStreamParser.m in Sources */,
+				DA5C989318C2762700D391F8 /* HVZQRViewController.m in Sources */,
 				DAB7A42C18B9BB6A0018D85B /* SBJsonTokeniser.m in Sources */,
 				DAB7A74C18B9BC8F0018D85B /* ASIDataCompressor.m in Sources */,
 				DAB7A74B18B9BC8F0018D85B /* ASIAuthenticationDialog.m in Sources */,

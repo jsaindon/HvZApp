@@ -12,6 +12,7 @@
 
 @end
 
+// Length of stun time for hit zombies
 const double STUN_TIME = 120;
 
 @implementation HVZViewController
@@ -34,6 +35,7 @@ const double STUN_TIME = 120;
     startingTime = STUN_TIME;
     timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countDown) userInfo:nil repeats:YES];
     
+    // Push notification
     UILocalNotification* localNotification = [[UILocalNotification alloc] init];
     localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:STUN_TIME];
     localNotification.alertBody = @"You are free to eat all you want now!!!!";
