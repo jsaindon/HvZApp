@@ -11,7 +11,7 @@
             <objects>
                 <viewController title="Settings" id="x9i-0o-8vg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yke-hg-Cqb">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmz-As-Zjp">
@@ -48,7 +48,7 @@
             <objects>
                 <viewController id="2" customClass="HVZViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0e-p3-gPw">
@@ -188,7 +188,7 @@
             <objects>
                 <viewController title="Rules" id="vBp-MY-Sgv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yu6-Ku-EiD">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -203,7 +203,7 @@
             <objects>
                 <tableViewController title="Notifications" id="pO0-ar-LPM" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Cd0-wW-rTB">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -233,7 +233,7 @@
             <objects>
                 <viewController title="Stats" id="Nxa-0u-dbc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FXP-Bw-62f">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -248,7 +248,7 @@
             <objects>
                 <viewController title="Feed" id="x4H-xm-7wg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22Q-js-MGC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEJ-7j-z6B">
@@ -280,10 +280,10 @@
             <objects>
                 <viewController storyboardIdentifier="LoginPage" id="ImE-DJ-0ss" customClass="HVZLoginPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DQB-nl-sL3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAQ-5f-YHQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAQ-5f-YHQ">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -368,13 +368,36 @@
             <point key="canvasLocation" x="-276" y="41"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="HVZLoginPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HVZLoginPageViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="submitButton:"/>
+                <relationship kind="outlet" name="StatusLine" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="password" candidateClass="NSString"/>
+                <relationship kind="outlet" name="passwordInput" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="username" candidateClass="NSString"/>
+                <relationship kind="outlet" name="usernameInput" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="HVZViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HVZViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="StartTimer"/>
+                <relationship kind="outlet" name="seconds" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="kOl-sZ-Q00"/>
         <segue reference="IVe-Kp-bw7"/>
+        <segue reference="eVn-X6-C0E"/>
     </inferredMetricsTieBreakers>
 </document>
