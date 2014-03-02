@@ -368,29 +368,6 @@
             <point key="canvasLocation" x="-276" y="41"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="HVZLoginPageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HVZLoginPageViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="submitButton:"/>
-                <relationship kind="outlet" name="StatusLine" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="password" candidateClass="NSString"/>
-                <relationship kind="outlet" name="passwordInput" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="username" candidateClass="NSString"/>
-                <relationship kind="outlet" name="usernameInput" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="HVZViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HVZViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="StartTimer"/>
-                <relationship kind="outlet" name="seconds" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

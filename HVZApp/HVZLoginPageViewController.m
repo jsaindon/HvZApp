@@ -56,17 +56,18 @@
     
     // Get the login page of the site, so that our csrf validation token can be
     // scraped from it.
-    NSURL *url = [NSURL URLWithString:@"http://claremonthvz.org/login/"];
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/login/"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request startSynchronous];
     NSLog(@"Past first request"); // We're logging these because a synchronous request can sometimes hang
-    NSString *response = [request responseString];
+    
     NSError *error = [request error];
     if (error) {
         StatusLine.text = @"Get connection failed.";
+        NSLog(@"Get connection failed.");
         return;
     }
-    
+    NSString *response = [request responseString];
     
     
     // Parse the csrf token out of the html returned
@@ -77,8 +78,8 @@
     NSRange tokenRange = NSMakeRange(55, 32); // The html is programmatically validated. I would not
                                               // do this if I didn't moderate the site in question.
     NSString *token = [cell substringWithRange:tokenRange];
-    NSLog(token);
-    
+    NSLog(@"%@", token);
+    NSLog(@"Parsed string, about to construct request.");
     // Now login, using the token we just scraped and the username/password entered by the user
     ASIFormDataRequest *loginAttempt = [ASIFormDataRequest requestWithURL:url];
     [loginAttempt setRequestMethod:@"POST"];
@@ -91,10 +92,10 @@
     NSString *loginResponse = [loginAttempt responseString];
     
     // Check if we logged in correctly.
-    NSRegularExpression *loggedInAs = [NSRegularExpression regularExpressionWithPattern:@"logged in as" options:0 error:NULL];
+    NSRegularExpression *loggedInAs = [NSRegularExpression regularExpressionWithPattern:@"logout" options:0 error:NULL];
     NSUInteger loggedIn = [loggedInAs numberOfMatchesInString:loginResponse options:0 range:NSMakeRange(0, [loginResponse length])];
-    NSLog([NSString stringWithFormat:@"%d", loggedIn]);
-    // NSLog(loginResponse);
+    NSLog(@"%@", [NSString stringWithFormat:@"%d", loggedIn]);
+    NSLog(@"%@", loginResponse);
     Boolean connect = false;
     
     if (loggedIn > 0 && !error) {
