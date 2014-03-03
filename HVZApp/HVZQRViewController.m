@@ -96,7 +96,7 @@
         for (NSString *type in barCodeTypes) {
             if ([metadata.type isEqualToString:type])
             {
-                barCodeObject = (AVMetadataMachineReadableCodeObject *)[_prevLayer transformedMetadataObjectForMetadataObject:(AVMetadataMachineReadableCodeObject *)metadata];
+                barCodeObject =(AVMetadataMachineReadableCodeObject *)[_prevLayer transformedMetadataObjectForMetadataObject:(AVMetadataMachineReadableCodeObject *)metadata];
                 highlightViewRect = barCodeObject.bounds;
                 detectionString = [(AVMetadataMachineReadableCodeObject *)metadata stringValue];
                 break;
