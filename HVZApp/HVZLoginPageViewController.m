@@ -35,7 +35,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    credentialsDictionary = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"password", nil] forKeys:[NSArray arrayWithObjects:@"username", nil]];
 }
 
 - (void)didReceiveMemoryWarning
