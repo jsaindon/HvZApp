@@ -17,10 +17,20 @@ const double STUN_TIME = 120;
 
 @implementation HVZViewController
 @synthesize TimerButton;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.navigationItem.hidesBackButton = YES;
 }
 
 - (void)didReceiveMemoryWarning
