@@ -10,7 +10,7 @@
 
 const double STUN_TIME;
 
-@interface HVZViewController : UIViewController {
+@interface HVZMainViewController : UIViewController {
     IBOutlet UILabel *seconds;
     NSTimer *timer;
     int startingTime;

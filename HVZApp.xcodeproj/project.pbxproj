@@ -18,7 +18,6 @@
 		31FB267C18AED9510095DEF0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31FB267B18AED9510095DEF0 /* Default@2x.png */; };
 		31FB267E18AED9510095DEF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31FB267D18AED9510095DEF0 /* Default-568h@2x.png */; };
 		31FB268118AED9510095DEF0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */; };
-		31FB268418AED9510095DEF0 /* HVZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB268318AED9510095DEF0 /* HVZViewController.m */; };
 		31FB268C18AED9510095DEF0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB268B18AED9510095DEF0 /* SenTestingKit.framework */; };
 		31FB268D18AED9510095DEF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266718AED9510095DEF0 /* UIKit.framework */; };
 		31FB268E18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
@@ -27,6 +26,7 @@
 		DA5C989318C2762700D391F8 /* HVZQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5C989218C2762700D391F8 /* HVZQRViewController.m */; };
 		DA5C989518C2789900D391F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5C989418C2789900D391F8 /* AVFoundation.framework */; };
 		DA8BD36B18B4327F00E577D5 /* HVZLoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */; };
+		DAB1396118C65EDD000A8B47 /* HVZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB268318AED9510095DEF0 /* HVZMainViewController.m */; };
 		DAB7A42318B9BB6A0018D85B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A40B18B9BB6A0018D85B /* NSObject+SBJson.m */; };
 		DAB7A42418B9BB6A0018D85B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A40E18B9BB6A0018D85B /* SBJsonParser.m */; };
 		DAB7A42518B9BB6A0018D85B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A41018B9BB6A0018D85B /* SBJsonStreamParser.m */; };
@@ -83,8 +83,8 @@
 		31FB267B18AED9510095DEF0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		31FB267D18AED9510095DEF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		31FB268018AED9510095DEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		31FB268218AED9510095DEF0 /* HVZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZViewController.h; sourceTree = "<group>"; };
-		31FB268318AED9510095DEF0 /* HVZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZViewController.m; sourceTree = "<group>"; };
+		31FB268218AED9510095DEF0 /* HVZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZMainViewController.h; sourceTree = "<group>"; };
+		31FB268318AED9510095DEF0 /* HVZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZMainViewController.m; sourceTree = "<group>"; };
 		31FB268A18AED9510095DEF0 /* HVZAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HVZAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FB268B18AED9510095DEF0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		31FB269318AED9510095DEF0 /* HVZAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HVZAppTests-Info.plist"; sourceTree = "<group>"; };
@@ -229,8 +229,8 @@
 				31FB267618AED9510095DEF0 /* HVZAppDelegate.h */,
 				31FB267718AED9510095DEF0 /* HVZAppDelegate.m */,
 				31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */,
-				31FB268218AED9510095DEF0 /* HVZViewController.h */,
-				31FB268318AED9510095DEF0 /* HVZViewController.m */,
+				31FB268218AED9510095DEF0 /* HVZMainViewController.h */,
+				31FB268318AED9510095DEF0 /* HVZMainViewController.m */,
 				DA5C989118C2762700D391F8 /* HVZQRViewController.h */,
 				DA5C989218C2762700D391F8 /* HVZQRViewController.m */,
 				31FB266E18AED9510095DEF0 /* Supporting Files */,
@@ -457,8 +457,8 @@
 				DAB7A75218B9BC8F0018D85B /* ASINetworkQueue.m in Sources */,
 				DAB7A74F18B9BC8F0018D85B /* ASIFormDataRequest.m in Sources */,
 				DAB7A74D18B9BC8F0018D85B /* ASIDataDecompressor.m in Sources */,
-				31FB268418AED9510095DEF0 /* HVZMainViewController.m in Sources */,
 				3170118D18C59C50002FCD1F /* HVZFeedViewController.m in Sources */,
+				DAB1396118C65EDD000A8B47 /* HVZMainViewController.m in Sources */,
 				DAB7A42B18B9BB6A0018D85B /* SBJsonStreamWriterState.m in Sources */,
 				DAB7A42418B9BB6A0018D85B /* SBJsonParser.m in Sources */,
 				DAB7A75118B9BC8F0018D85B /* ASIInputStream.m in Sources */,

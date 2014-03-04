@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 LSD. All rights reserved.
 //
 
-#import "HVZViewController.h"
+#import "HVZMainViewController.h"
 
-@interface HVZViewController ()
+@interface HVZMainViewController ()
 
 @end
 
 // Length of stun time for hit zombies
 const double STUN_TIME = 120;
 
-@implementation HVZViewController
+@implementation HVZMainViewController
 @synthesize TimerButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
