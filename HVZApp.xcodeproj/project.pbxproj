@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3170118D18C59C50002FCD1F /* HVZFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3170118C18C59C50002FCD1F /* HVZFeedViewController.m */; };
 		31FB266818AED9510095DEF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266718AED9510095DEF0 /* UIKit.framework */; };
 		31FB266A18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
 		31FB266C18AED9510095DEF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266B18AED9510095DEF0 /* CoreGraphics.framework */; };
@@ -66,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3170118B18C59C50002FCD1F /* HVZFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVZFeedViewController.h; path = ../HVZFeedViewController.h; sourceTree = "<group>"; };
+		3170118C18C59C50002FCD1F /* HVZFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVZFeedViewController.m; path = ../HVZFeedViewController.m; sourceTree = "<group>"; };
 		31FB266418AED9510095DEF0 /* HVZApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HVZApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FB266718AED9510095DEF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		31FB266918AED9510095DEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -221,6 +224,8 @@
 		31FB266D18AED9510095DEF0 /* HVZApp */ = {
 			isa = PBXGroup;
 			children = (
+				3170118B18C59C50002FCD1F /* HVZFeedViewController.h */,
+				3170118C18C59C50002FCD1F /* HVZFeedViewController.m */,
 				31FB267618AED9510095DEF0 /* HVZAppDelegate.h */,
 				31FB267718AED9510095DEF0 /* HVZAppDelegate.m */,
 				31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */,
@@ -452,6 +457,7 @@
 				DAB7A75218B9BC8F0018D85B /* ASINetworkQueue.m in Sources */,
 				DAB7A74F18B9BC8F0018D85B /* ASIFormDataRequest.m in Sources */,
 				DAB7A74D18B9BC8F0018D85B /* ASIDataDecompressor.m in Sources */,
+				3170118D18C59C50002FCD1F /* HVZFeedViewController.m in Sources */,
 				31FB268418AED9510095DEF0 /* HVZViewController.m in Sources */,
 				DAB7A42B18B9BB6A0018D85B /* SBJsonStreamWriterState.m in Sources */,
 				DAB7A42418B9BB6A0018D85B /* SBJsonParser.m in Sources */,
