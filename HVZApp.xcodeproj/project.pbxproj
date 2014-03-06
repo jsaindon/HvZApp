@@ -27,6 +27,7 @@
 		DA5C989518C2789900D391F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5C989418C2789900D391F8 /* AVFoundation.framework */; };
 		DA8BD36B18B4327F00E577D5 /* HVZLoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */; };
 		DAB1396118C65EDD000A8B47 /* HVZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB268318AED9510095DEF0 /* HVZMainViewController.m */; };
+		DAB1396418C8113E000A8B47 /* HVZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */; };
 		DAB7A42318B9BB6A0018D85B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A40B18B9BB6A0018D85B /* NSObject+SBJson.m */; };
 		DAB7A42418B9BB6A0018D85B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A40E18B9BB6A0018D85B /* SBJsonParser.m */; };
 		DAB7A42518B9BB6A0018D85B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A41018B9BB6A0018D85B /* SBJsonStreamParser.m */; };
@@ -96,6 +97,8 @@
 		DA5C989418C2789900D391F8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DA8BD36918B4327F00E577D5 /* HVZLoginPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZLoginPageViewController.h; sourceTree = "<group>"; };
 		DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZLoginPageViewController.m; sourceTree = "<group>"; };
+		DAB1396218C8113E000A8B47 /* HVZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZSettingsViewController.h; sourceTree = "<group>"; };
+		DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZSettingsViewController.m; sourceTree = "<group>"; };
 		DAB7A40A18B9BB6A0018D85B /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		DAB7A40B18B9BB6A0018D85B /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		DAB7A40C18B9BB6A0018D85B /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 				31FB267718AED9510095DEF0 /* HVZAppDelegate.m */,
 				31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */,
 				31FB268218AED9510095DEF0 /* HVZMainViewController.h */,
+				DAB1396218C8113E000A8B47 /* HVZSettingsViewController.h */,
+				DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */,
 				31FB268318AED9510095DEF0 /* HVZMainViewController.m */,
 				DA5C989118C2762700D391F8 /* HVZQRViewController.h */,
 				DA5C989218C2762700D391F8 /* HVZQRViewController.m */,
@@ -463,6 +468,7 @@
 				DAB7A42418B9BB6A0018D85B /* SBJsonParser.m in Sources */,
 				DAB7A75118B9BC8F0018D85B /* ASIInputStream.m in Sources */,
 				DAB7A42D18B9BB6A0018D85B /* SBJsonUTF8Stream.m in Sources */,
+				DAB1396418C8113E000A8B47 /* HVZSettingsViewController.m in Sources */,
 				DAB7A42518B9BB6A0018D85B /* SBJsonStreamParser.m in Sources */,
 				DA5C989318C2762700D391F8 /* HVZQRViewController.m in Sources */,
 				DAB7A42C18B9BB6A0018D85B /* SBJsonTokeniser.m in Sources */,
