@@ -16,8 +16,6 @@
 
 @implementation HVZSettingsViewController
 
-@synthesize StatusLine;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -49,8 +47,16 @@
     
     NSError *error = [request error];
     if (error) {
-        StatusLine.text = @"Get connection failed.";
+        // No connection, so we need to quit.
         NSLog(@"Get connection failed.");
+        
+        // We deleted local data, so notify user.
+        NSLog(@"No connection to the HvZ website");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection failed" message:@"Logout successful, but you have no connection to the website." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        [alert show];
+        
+        // Since we've cleared user information, we should segue and return
+        [self performSegueWithIdentifier:@"logoutSuccess" sender:self];
         return;
     }
     NSString *response = [request responseString];
@@ -91,16 +97,12 @@
         NSLog(@"Logged out successfully!");
         loggedOut = true;
     } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Logout failed" message:@"Either the website is down or you do not have internet coverage." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
-        [alert show];
+        // Do nothing
     }
     
     
-    
-    if(loggedOut) { // Credentials are correct
-        
-        [self performSegueWithIdentifier:@"logoutSuccess" sender:self];
-    }
+    // Since we've cleared user information, we should always segue
+    [self performSegueWithIdentifier:@"logoutSuccess" sender:self];
 }
 
 - (void)didReceiveMemoryWarning

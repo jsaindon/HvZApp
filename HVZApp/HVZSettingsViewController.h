@@ -10,9 +10,6 @@
 
 @interface HVZSettingsViewController : UIViewController
 
-// Shows status of web connection attempt
-@property (weak, nonatomic) IBOutlet UILabel *StatusLine;
-
 // Logout Button
 - (IBAction)logoutButton:(id)sender;
 
