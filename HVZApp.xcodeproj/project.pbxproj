@@ -103,7 +103,7 @@
 		DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZSettingsViewController.m; sourceTree = "<group>"; };
 		DAB1396518D13F01000A8B47 /* HVZRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZRulesViewController.h; sourceTree = "<group>"; };
 		DAB1396618D13F01000A8B47 /* HVZRulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZRulesViewController.m; sourceTree = "<group>"; };
-		DAB1396A18D151F2000A8B47 /* Rules.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Rules.pdf; path = HVZApp/Rules.pdf; sourceTree = "<group>"; };
+		DAB1396A18D151F2000A8B47 /* Rules.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Rules.pdf; sourceTree = "<group>"; };
 		DAB7A40A18B9BB6A0018D85B /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		DAB7A40B18B9BB6A0018D85B /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		DAB7A40C18B9BB6A0018D85B /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 		31FB265B18AED9500095DEF0 = {
 			isa = PBXGroup;
 			children = (
-				DAB1396A18D151F2000A8B47 /* Rules.pdf */,
 				DAB7A43018B9BBF00018D85B /* ASIHTTPRequest */,
 				DAB7A40918B9BB450018D85B /* json */,
 				31FB266D18AED9510095DEF0 /* HVZApp */,
@@ -256,6 +255,7 @@
 		31FB266E18AED9510095DEF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAB1396A18D151F2000A8B47 /* Rules.pdf */,
 				31FB266F18AED9510095DEF0 /* HVZApp-Info.plist */,
 				31FB267018AED9510095DEF0 /* InfoPlist.strings */,
 				31FB267318AED9510095DEF0 /* main.m */,
