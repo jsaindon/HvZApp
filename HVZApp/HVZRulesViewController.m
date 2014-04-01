@@ -28,6 +28,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
     
     // Load web view of rules onto WebView object
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Rules" ofType:@"pdf"];

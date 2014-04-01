@@ -31,6 +31,7 @@ const double STUN_TIME = 120;
 {
     [super viewDidLoad];
 	self.navigationItem.hidesBackButton = YES;
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

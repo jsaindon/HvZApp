@@ -26,6 +26,10 @@
 		DA5C989318C2762700D391F8 /* HVZQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5C989218C2762700D391F8 /* HVZQRViewController.m */; };
 		DA5C989518C2789900D391F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5C989418C2789900D391F8 /* AVFoundation.framework */; };
 		DA8BD36B18B4327F00E577D5 /* HVZLoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */; };
+		DAAD67D618EA675D00487C90 /* HVZLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAAD67D518EA675D00487C90 /* HVZLogo.jpg */; };
+		DAAD67D818EA7FC500487C90 /* HVZButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD67D718EA7FC500487C90 /* HVZButton.png */; };
+		DAAD67DA18EA7FCE00487C90 /* HVZButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD67D918EA7FCE00487C90 /* HVZButton2.png */; };
+		DAAD67DC18EA7FDA00487C90 /* HVZButton3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAD67DB18EA7FDA00487C90 /* HVZButton3.png */; };
 		DAB1396118C65EDD000A8B47 /* HVZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB268318AED9510095DEF0 /* HVZMainViewController.m */; };
 		DAB1396418C8113E000A8B47 /* HVZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */; };
 		DAB1396718D13F01000A8B47 /* HVZRulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1396618D13F01000A8B47 /* HVZRulesViewController.m */; };
@@ -99,6 +103,10 @@
 		DA5C989418C2789900D391F8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DA8BD36918B4327F00E577D5 /* HVZLoginPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZLoginPageViewController.h; sourceTree = "<group>"; };
 		DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZLoginPageViewController.m; sourceTree = "<group>"; };
+		DAAD67D518EA675D00487C90 /* HVZLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HVZLogo.jpg; sourceTree = "<group>"; };
+		DAAD67D718EA7FC500487C90 /* HVZButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HVZButton.png; sourceTree = "<group>"; };
+		DAAD67D918EA7FCE00487C90 /* HVZButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HVZButton2.png; sourceTree = "<group>"; };
+		DAAD67DB18EA7FDA00487C90 /* HVZButton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HVZButton3.png; sourceTree = "<group>"; };
 		DAB1396218C8113E000A8B47 /* HVZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZSettingsViewController.h; sourceTree = "<group>"; };
 		DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZSettingsViewController.m; sourceTree = "<group>"; };
 		DAB1396518D13F01000A8B47 /* HVZRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZRulesViewController.h; sourceTree = "<group>"; };
@@ -255,6 +263,10 @@
 		31FB266E18AED9510095DEF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAAD67DB18EA7FDA00487C90 /* HVZButton3.png */,
+				DAAD67D918EA7FCE00487C90 /* HVZButton2.png */,
+				DAAD67D718EA7FC500487C90 /* HVZButton.png */,
+				DAAD67D518EA675D00487C90 /* HVZLogo.jpg */,
 				DAB1396A18D151F2000A8B47 /* Rules.pdf */,
 				31FB266F18AED9510095DEF0 /* HVZApp-Info.plist */,
 				31FB267018AED9510095DEF0 /* InfoPlist.strings */,
@@ -421,7 +433,11 @@
 			files = (
 				31FB267218AED9510095DEF0 /* InfoPlist.strings in Resources */,
 				31FB267A18AED9510095DEF0 /* Default.png in Resources */,
+				DAAD67D618EA675D00487C90 /* HVZLogo.jpg in Resources */,
 				31FB267C18AED9510095DEF0 /* Default@2x.png in Resources */,
+				DAAD67DC18EA7FDA00487C90 /* HVZButton3.png in Resources */,
+				DAAD67DA18EA7FCE00487C90 /* HVZButton2.png in Resources */,
+				DAAD67D818EA7FC500487C90 /* HVZButton.png in Resources */,
 				31FB267E18AED9510095DEF0 /* Default-568h@2x.png in Resources */,
 				DAB1396B18D151F2000A8B47 /* Rules.pdf in Resources */,
 				31FB268118AED9510095DEF0 /* MainStoryboard.storyboard in Resources */,
