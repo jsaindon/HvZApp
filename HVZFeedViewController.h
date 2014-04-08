@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HVZFeedViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+@interface HVZFeedViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate,UITextViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *DescriptionBox;
-@property (weak, nonatomic) IBOutlet UIPickerView *LocationPicker;
 @property (weak, nonatomic) IBOutlet UITextField *FeedCode;
 @property (weak, nonatomic) IBOutlet UIButton *SubmitButton;
 @property (strong, nonatomic) NSArray *locationList;

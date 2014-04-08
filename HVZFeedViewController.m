@@ -8,6 +8,7 @@
 
 #import "HVZFeedViewController.h"
 #import "ASIFormDataRequest.h"
+#include <QuartzCore/QuartzCore.h>
 
 @interface HVZFeedViewController ()
 
@@ -15,7 +16,6 @@
 
 @implementation HVZFeedViewController
 @synthesize Description;
-@synthesize LocationPicker;
 @synthesize FeedCode;
 @synthesize SubmitButton;
 @synthesize DescriptionBox;
@@ -40,7 +40,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.locationList = [[NSArray alloc] initWithObjects:@"East Dorm (Mudd)",@"West Dorm (Mudd)",@"North Dorm (Mudd)",@"South Dorm (Mudd)",@"Sontag Dorm (Mudd)",@"Atwood Dorm (Mudd)",@"Linde Dorm (Mudd)", @"Case Dorm (Mudd)", nil];
+    // Make sure navigation bar shows
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
+    
+    // Set border for description text view
+    [[self.DescriptionBox layer] setBorderColor:[[UIColor lightGrayColor] CGColor]];
+    [[self.DescriptionBox layer] setBorderWidth:.4];
+    [[self.DescriptionBox layer] setCornerRadius:8.0f];
+    
+    // Declare feed code and description delegates
+    self.FeedCode.delegate = self;
+    self.DescriptionBox.delegate = self;
 
 }
 
@@ -49,6 +59,24 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    [self.view endEditing:YES];
+    NSLog(@"Feed code finished editing");
+    return YES;
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
+}
+
 - (IBAction)SubmitButtonPress:(id)sender {
     // Awful evil hack
     self.Day = @"Tue";

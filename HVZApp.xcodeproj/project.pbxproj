@@ -34,6 +34,7 @@
 		DAB1396418C8113E000A8B47 /* HVZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */; };
 		DAB1396718D13F01000A8B47 /* HVZRulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1396618D13F01000A8B47 /* HVZRulesViewController.m */; };
 		DAB1396B18D151F2000A8B47 /* Rules.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DAB1396A18D151F2000A8B47 /* Rules.pdf */; };
+		DAB522A618F3E29000FAF9C7 /* FeedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB522A518F3E29000FAF9C7 /* FeedButton.png */; };
 		DAB7A42318B9BB6A0018D85B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A40B18B9BB6A0018D85B /* NSObject+SBJson.m */; };
 		DAB7A42418B9BB6A0018D85B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A40E18B9BB6A0018D85B /* SBJsonParser.m */; };
 		DAB7A42518B9BB6A0018D85B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A41018B9BB6A0018D85B /* SBJsonStreamParser.m */; };
@@ -112,6 +113,7 @@
 		DAB1396518D13F01000A8B47 /* HVZRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZRulesViewController.h; sourceTree = "<group>"; };
 		DAB1396618D13F01000A8B47 /* HVZRulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZRulesViewController.m; sourceTree = "<group>"; };
 		DAB1396A18D151F2000A8B47 /* Rules.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Rules.pdf; sourceTree = "<group>"; };
+		DAB522A518F3E29000FAF9C7 /* FeedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FeedButton.png; sourceTree = "<group>"; };
 		DAB7A40A18B9BB6A0018D85B /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		DAB7A40B18B9BB6A0018D85B /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		DAB7A40C18B9BB6A0018D85B /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		31FB266E18AED9510095DEF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAB522A518F3E29000FAF9C7 /* FeedButton.png */,
 				DAAD67DB18EA7FDA00487C90 /* HVZButton3.png */,
 				DAAD67D918EA7FCE00487C90 /* HVZButton2.png */,
 				DAAD67D718EA7FC500487C90 /* HVZButton.png */,
@@ -437,6 +440,7 @@
 				31FB267C18AED9510095DEF0 /* Default@2x.png in Resources */,
 				DAAD67DC18EA7FDA00487C90 /* HVZButton3.png in Resources */,
 				DAAD67DA18EA7FCE00487C90 /* HVZButton2.png in Resources */,
+				DAB522A618F3E29000FAF9C7 /* FeedButton.png in Resources */,
 				DAAD67D818EA7FC500487C90 /* HVZButton.png in Resources */,
 				31FB267E18AED9510095DEF0 /* Default-568h@2x.png in Resources */,
 				DAB1396B18D151F2000A8B47 /* Rules.pdf in Resources */,

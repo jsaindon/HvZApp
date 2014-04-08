@@ -32,6 +32,15 @@ const double STUN_TIME = 120;
     [super viewDidLoad];
 	self.navigationItem.hidesBackButton = YES;
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *username = [defaults valueForKey:@"username"];
+    
+    if (username != nil) {
+        self.title = [@"Player: " stringByAppendingString:username];
+    } else {
+        self.title = @"Claremont HvZ";
+    }
 }
 
 - (void)didReceiveMemoryWarning
