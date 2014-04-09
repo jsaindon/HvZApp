@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="1518" y="846"/>
         </scene>
-        <!--View Controller - Game Info-->
+        <!--View Controller - Stats-->
         <scene sceneID="4UP-zU-5BW">
             <objects>
-                <viewController title="Game Info" id="Nxa-0u-dbc" sceneMemberID="viewController">
+                <viewController title="Stats" id="Nxa-0u-dbc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dwu-3n-P0u"/>
                         <viewControllerLayoutGuide type="bottom" id="Uz1-EF-HUL"/>
@@ -213,7 +213,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Stats" id="Wv4-1Z-7c4"/>
+                    <navigationItem key="navigationItem" title="Game Info" id="Wv4-1Z-7c4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIu-ca-Q5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
