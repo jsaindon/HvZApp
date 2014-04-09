@@ -7,6 +7,7 @@
 //
 
 #import "HVZMainViewController.h"
+#import "ASIHTTPRequest.h" 
 
 @interface HVZMainViewController ()
 
@@ -17,6 +18,7 @@ const double STUN_TIME = 120;
 
 @implementation HVZMainViewController
 @synthesize TimerButton;
+@synthesize HVZRatioLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,6 +43,31 @@ const double STUN_TIME = 120;
     } else {
         self.title = @"Claremont HvZ";
     }
+    
+    // Display the humans to zombies count
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/api/hvzratio"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request startSynchronous];
+    
+    NSError *error = [request error];
+    
+    // If the request fails, handle and stop
+    if (error) {
+        HVZRatioLabel.text = @"Welcome";
+        NSLog(@"Couldn't display the human/zombie ratio");
+        return;
+    }
+    
+    NSData *responseData = [request responseData];
+    
+    NSDictionary *hvzDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:NULL];
+    
+    
+    
+    NSString *hvzRatioDisplayString = [NSString stringWithFormat:@"%@%@%@", [hvzDict objectForKey:@"H"], @":", [hvzDict objectForKey:@"Z"]];
+    
+    HVZRatioLabel.text = hvzRatioDisplayString;
+
 }
 
 - (void)didReceiveMemoryWarning

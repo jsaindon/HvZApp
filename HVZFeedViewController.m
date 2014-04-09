@@ -51,7 +51,6 @@
     // Declare feed code and description delegates
     self.FeedCode.delegate = self;
     self.DescriptionBox.delegate = self;
-
 }
 
 - (void)didReceiveMemoryWarning

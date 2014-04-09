@@ -133,6 +133,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Claremont HvZ" id="eyc-yk-5Mx"/>
                     <connections>
+                        <outlet property="HVZRatioLabel" destination="Uuj-qv-QFd" id="ruk-a7-bTC"/>
                         <outlet property="TimerButton" destination="X9C-tR-72t" id="kLL-EY-qx6"/>
                         <outlet property="seconds" destination="3sO-FV-lBn" id="K6M-WU-gjc"/>
                     </connections>

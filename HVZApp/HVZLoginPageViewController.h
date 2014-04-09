@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HVZLoginPageViewController : UIViewController {
+@interface HVZLoginPageViewController : UIViewController <UITextFieldDelegate> {
     NSDictionary *credentialsDictionary;
 }
 
