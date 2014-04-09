@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="1518" y="846"/>
         </scene>
-        <!--View Controller - Stats-->
+        <!--View Controller - Game Info-->
         <scene sceneID="4UP-zU-5BW">
             <objects>
-                <viewController title="Stats" id="Nxa-0u-dbc" sceneMemberID="viewController">
+                <viewController title="Game Info" id="Nxa-0u-dbc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dwu-3n-P0u"/>
                         <viewControllerLayoutGuide type="bottom" id="Uz1-EF-HUL"/>
