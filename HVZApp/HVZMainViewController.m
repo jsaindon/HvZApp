@@ -19,6 +19,7 @@ const double STUN_TIME = 120;
 @implementation HVZMainViewController
 @synthesize TimerButton;
 @synthesize HVZRatioLabel;
+@synthesize FeedButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,6 +68,41 @@ const double STUN_TIME = 120;
     NSString *hvzRatioDisplayString = [NSString stringWithFormat:@"%@%@%@", [hvzDict objectForKey:@"H"], @":", [hvzDict objectForKey:@"Z"]];
     
     HVZRatioLabel.text = hvzRatioDisplayString;
+    
+    // If player is zombie, gray out the feed button
+    BOOL zombie = [self checkZombie];
+    
+    if (zombie) {
+        [FeedButton setEnabled:YES];
+    } else {
+        [FeedButton setEnabled:NO];
+        [FeedButton setBackgroundColor:[UIColor darkGrayColor]];
+    }
+}
+
+- (BOOL)checkZombie {
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/api/currplayer"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request startSynchronous];
+    
+    NSError *error = [request error];
+    
+    // If the request fails, handle and stop
+    if (error) {
+        NSLog(@"Couldn't request player information from website");
+        return true;
+    }
+    
+    NSData *responseData = [request responseData];
+    
+    NSDictionary *playerDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:NULL];
+    
+    // Check if player is zombie
+    if ([[playerDict valueForKey:@"team"] isEqualToString:@"H"]){
+        return false;
+    } else {
+        return true;
+    }
 
 }
 

@@ -124,7 +124,11 @@
     NSString *gameModString = [NSString stringWithFormat:@"%@%@", @"Current Mod: ", [gameDict objectForKey:@"currentmod"]];
     NSString *gameSeasonString = [NSString stringWithFormat:@"%@%@", @"Game: ", [gameDict objectForKey:@"season"]];
     
-    gameMod.text = gameModString;
+    if (![gameModString  isEqual: @"Current Mod: <null>"]){
+        gameMod.text = gameModString;
+    } else {
+        gameMod.text = @"Current Mod: N/A";
+    }
     gameSeason.text = gameSeasonString;
     
 }

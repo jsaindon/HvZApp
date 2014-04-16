@@ -20,6 +20,7 @@ const double STUN_TIME;
 - (IBAction)StartTimer;
 @property (weak, nonatomic) IBOutlet UIButton *TimerButton;
 @property (weak, nonatomic) IBOutlet UILabel *HVZRatioLabel;
+@property (weak, nonatomic) IBOutlet UIButton *FeedButton;
 
 
 
