@@ -180,7 +180,7 @@
 		1F3CC4CF165C48AD008526E3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1F79711512DE3C1000D4937F /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		1FD26EBE13FB318700DBC45F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		1FE0B84817E27CBC00856C60 /* PushSample copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PushSample copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE0B84817E27CBC00856C60 /* PushSample-iOS5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PushSample-iOS5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE0B84A17E27D7900856C60 /* libUAirship-iOS5-4.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-iOS5-4.0.0.a"; path = "../Airship/libUAirship-iOS5-4.0.0.a"; sourceTree = "<group>"; };
 		1FE3959C177A25DC00388531 /* SampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleAppDelegate.m; sourceTree = "<group>"; };
 		1FE3959D177A25DC00388531 /* SampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleAppDelegate.h; sourceTree = "<group>"; };
@@ -489,7 +489,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* PushSample.app */,
-				1FE0B84817E27CBC00856C60 /* PushSample copy.app */,
+				1FE0B84817E27CBC00856C60 /* PushSample-iOS5.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -578,7 +578,7 @@
 			);
 			name = "PushSample-iOS5";
 			productName = PushLibSample;
-			productReference = 1FE0B84817E27CBC00856C60 /* PushSample copy.app */;
+			productReference = 1FE0B84817E27CBC00856C60 /* PushSample-iOS5.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
