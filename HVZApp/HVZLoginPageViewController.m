@@ -35,6 +35,10 @@
     [super viewDidLoad];
 	self.navigationItem.hidesBackButton = YES;
     
+    // Declare text field delegates
+    self.usernameInput.delegate = self;
+    self.passwordInput.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -114,6 +118,13 @@
         [self performSegueWithIdentifier:@"loginCorrect" sender:self];
     }
     
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    [self.view endEditing:YES];
+    NSLog(@"Text field finished editing");
+    return YES;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

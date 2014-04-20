@@ -7,6 +7,7 @@
 //
 
 #import "HVZMainViewController.h"
+#import "ASIHTTPRequest.h" 
 
 @interface HVZMainViewController ()
 
@@ -17,6 +18,8 @@ const double STUN_TIME = 120;
 
 @implementation HVZMainViewController
 @synthesize TimerButton;
+@synthesize HVZRatioLabel;
+@synthesize FeedButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,7 +34,7 @@ const double STUN_TIME = 120;
 {
     [super viewDidLoad];
 	self.navigationItem.hidesBackButton = YES;
-    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    //[[self navigationController] setNavigationBarHidden:YES animated:YES];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *username = [defaults valueForKey:@"username"];
@@ -41,6 +44,66 @@ const double STUN_TIME = 120;
     } else {
         self.title = @"Claremont HvZ";
     }
+    
+    // Display the humans to zombies count
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/api/hvzratio"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request startSynchronous];
+    
+    NSError *error = [request error];
+    
+    // If the request fails, handle and stop
+    if (error) {
+        HVZRatioLabel.text = @"Welcome";
+        NSLog(@"Couldn't display the human/zombie ratio");
+        return;
+    }
+    
+    NSData *responseData = [request responseData];
+    
+    NSDictionary *hvzDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:NULL];
+    
+    
+    
+    NSString *hvzRatioDisplayString = [NSString stringWithFormat:@"%@%@%@", [hvzDict objectForKey:@"H"], @":", [hvzDict objectForKey:@"Z"]];
+    
+    HVZRatioLabel.text = hvzRatioDisplayString;
+    
+    // If player is zombie, gray out the feed button
+    BOOL zombie = [self checkZombie];
+    
+    if (zombie) {
+        [FeedButton setEnabled:YES];
+    } else {
+        [FeedButton setEnabled:NO];
+        [FeedButton setBackgroundColor:[UIColor darkGrayColor]];
+    }
+}
+
+- (BOOL)checkZombie {
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/api/currplayer"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request startSynchronous];
+    
+    NSError *error = [request error];
+    
+    // If the request fails, handle and stop
+    if (error) {
+        NSLog(@"Couldn't request player information from website");
+        return true;
+    }
+    
+    NSData *responseData = [request responseData];
+    
+    NSDictionary *playerDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:NULL];
+    
+    // Check if player is zombie
+    if ([[playerDict valueForKey:@"team"] isEqualToString:@"H"]){
+        return false;
+    } else {
+        return true;
+    }
+
 }
 
 - (void)didReceiveMemoryWarning

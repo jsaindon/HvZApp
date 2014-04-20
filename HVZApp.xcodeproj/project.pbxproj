@@ -115,6 +115,7 @@
 		DAB7A76018B9C4040018D85B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7A75F18B9C4040018D85B /* SystemConfiguration.framework */; };
 		DAB7A76118B9C42C0018D85B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7A75A18B9C32A0018D85B /* libxml2.dylib */; };
 		DAB7A76318B9C44D0018D85B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7A76218B9C44D0018D85B /* libz.dylib */; };
+		DAF8FBC818FB404100E69A5C /* HVZGameInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF8FBC718FB404100E69A5C /* HVZGameInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -412,6 +413,8 @@
 		DAB7A75D18B9C3FB0018D85B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DAB7A75F18B9C4040018D85B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DAB7A76218B9C44D0018D85B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DAF8FBC618FB404100E69A5C /* HVZGameInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZGameInfoViewController.h; sourceTree = "<group>"; };
+		DAF8FBC718FB404100E69A5C /* HVZGameInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZGameInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -507,12 +510,14 @@
 				31FB267618AED9510095DEF0 /* HVZAppDelegate.h */,
 				31FB267718AED9510095DEF0 /* HVZAppDelegate.m */,
 				31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */,
+				DAF8FBC618FB404100E69A5C /* HVZGameInfoViewController.h */,
+				DAF8FBC718FB404100E69A5C /* HVZGameInfoViewController.m */,
 				DAB1396518D13F01000A8B47 /* HVZRulesViewController.h */,
 				DAB1396618D13F01000A8B47 /* HVZRulesViewController.m */,
 				31FB268218AED9510095DEF0 /* HVZMainViewController.h */,
+				31FB268318AED9510095DEF0 /* HVZMainViewController.m */,
 				DAB1396218C8113E000A8B47 /* HVZSettingsViewController.h */,
 				DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */,
-				31FB268318AED9510095DEF0 /* HVZMainViewController.m */,
 				DA5C989118C2762700D391F8 /* HVZQRViewController.h */,
 				DA5C989218C2762700D391F8 /* HVZQRViewController.m */,
 				31FB266E18AED9510095DEF0 /* Supporting Files */,
@@ -1126,6 +1131,7 @@
 				31FB267418AED9510095DEF0 /* main.m in Sources */,
 				93BB6BB118F9E909001D3EC2 /* UAPushSettingsAddTagViewController.m in Sources */,
 				93BB6BA018F9E909001D3EC2 /* UAInboxAlertHandler.m in Sources */,
+				DAF8FBC818FB404100E69A5C /* HVZGameInfoViewController.m in Sources */,
 				31FB267818AED9510095DEF0 /* HVZAppDelegate.m in Sources */,
 				DAB7A74E18B9BC8F0018D85B /* ASIDownloadCache.m in Sources */,
 				DAB7A42A18B9BB6A0018D85B /* SBJsonStreamWriterAccumulator.m in Sources */,
