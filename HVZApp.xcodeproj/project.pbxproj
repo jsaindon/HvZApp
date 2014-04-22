@@ -260,9 +260,9 @@
 				DAB1396318C8113E000A8B47 /* HVZSettingsViewController.m */,
 				DA5C989118C2762700D391F8 /* HVZQRViewController.h */,
 				DA5C989218C2762700D391F8 /* HVZQRViewController.m */,
-				31FB266E18AED9510095DEF0 /* Supporting Files */,
 				DA8BD36918B4327F00E577D5 /* HVZLoginPageViewController.h */,
 				DA8BD36A18B4327F00E577D5 /* HVZLoginPageViewController.m */,
+				31FB266E18AED9510095DEF0 /* Supporting Files */,
 			);
 			path = HVZApp;
 			sourceTree = "<group>";
