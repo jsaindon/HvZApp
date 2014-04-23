@@ -8,6 +8,7 @@
 
 #import "HVZMainViewController.h"
 #import "ASIHTTPRequest.h" 
+#import "CRSFGetter.h"
 
 @interface HVZMainViewController ()
 
