@@ -91,12 +91,11 @@
     feedcode = [feedcode capitalizedString];
     
     // Check if only allowed letters in the Feed Code text field
-    NSMutableCharacterSet *feedLetters = [NSMutableCharacterSet characterSetWithCharactersInString:@"ACELXNPOSTWZ"];
-    [feedLetters formUnionWithCharacterSet:[NSCharacterSet alphanumericCharacterSet]];
-    BOOL valid = [[feedcode stringByTrimmingCharactersInSet:feedLetters] isEqualToString:@""];
+    //BOOL valid = true;
+    //NSMutableCharacterSet *feedLetters = [NSMutableCharacterSet characterSetWithCharactersInString:@"ACELXNPOSTWZ"];
     
-    if ([feedcode length] != 5 && valid) {
-        NSLog(@"Feed code entered was not of proper length");
+    if ([feedcode length] != 5) {
+        NSLog(@"Feed code entered was not of proper length or uses invalid characters.");
         UIAlertView *codeAlert = [[UIAlertView alloc] initWithTitle:@"Feed Error" message:@"Feed code was not formatted properly." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
         [codeAlert show];
         return;
