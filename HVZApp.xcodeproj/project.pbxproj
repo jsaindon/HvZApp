@@ -118,6 +118,7 @@
 		DAB7A76118B9C42C0018D85B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7A75A18B9C32A0018D85B /* libxml2.dylib */; };
 		DAB7A76318B9C44D0018D85B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7A76218B9C44D0018D85B /* libz.dylib */; };
 		DAF8FBC818FB404100E69A5C /* HVZGameInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF8FBC718FB404100E69A5C /* HVZGameInfoViewController.m */; };
+		DAF8FD3D190780C200E69A5C /* CRSFGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF8FD3C190780C200E69A5C /* CRSFGetter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -421,6 +422,8 @@
 		DAB7A76218B9C44D0018D85B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DAF8FBC618FB404100E69A5C /* HVZGameInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVZGameInfoViewController.h; sourceTree = "<group>"; };
 		DAF8FBC718FB404100E69A5C /* HVZGameInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZGameInfoViewController.m; sourceTree = "<group>"; };
+		DAF8FD3B190780C200E69A5C /* CRSFGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSFGetter.h; sourceTree = "<group>"; };
+		DAF8FD3C190780C200E69A5C /* CRSFGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSFGetter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +518,8 @@
 				931E4B411904BCBB001BB944 /* HVZNotificationsViewController.m */,
 				3170118B18C59C50002FCD1F /* HVZFeedViewController.h */,
 				3170118C18C59C50002FCD1F /* HVZFeedViewController.m */,
+				DAF8FD3B190780C200E69A5C /* CRSFGetter.h */,
+				DAF8FD3C190780C200E69A5C /* CRSFGetter.m */,
 				31FB267618AED9510095DEF0 /* HVZAppDelegate.h */,
 				31FB267718AED9510095DEF0 /* HVZAppDelegate.m */,
 				31FB267F18AED9510095DEF0 /* MainStoryboard.storyboard */,
@@ -1170,6 +1175,7 @@
 				DAB7A42418B9BB6A0018D85B /* SBJsonParser.m in Sources */,
 				DAB7A75118B9BC8F0018D85B /* ASIInputStream.m in Sources */,
 				DAB7A42D18B9BB6A0018D85B /* SBJsonUTF8Stream.m in Sources */,
+				DAF8FD3D190780C200E69A5C /* CRSFGetter.m in Sources */,
 				DAB1396418C8113E000A8B47 /* HVZSettingsViewController.m in Sources */,
 				DAB7A42518B9BB6A0018D85B /* SBJsonStreamParser.m in Sources */,
 				DA5C989318C2762700D391F8 /* HVZQRViewController.m in Sources */,

@@ -36,6 +36,9 @@
     [UAPush setDefaultPushEnabledValue:NO];
     NSLog(@"DO YOU WANT TO NOTIFICATION");
     [[UAPush shared] setPushEnabled:YES];
+    
+    // Return successful
+    return true;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

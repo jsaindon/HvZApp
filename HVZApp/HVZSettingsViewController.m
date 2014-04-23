@@ -9,6 +9,7 @@
 #import "HVZSettingsViewController.h"
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
+#import "CRSFGetter.h"
 
 @interface HVZSettingsViewController ()
 
@@ -39,40 +40,17 @@
     [storage removeObjectForKey:@"username"];
     [storage removeObjectForKey:@"password"];
     
-    // Get the logout page of the site, so that our csrf validation token can be
-    // scraped from it, and so we can logout.
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/logout"];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    [request startSynchronous];
-    NSLog(@"Past first request"); // We're logging these because a synchronous request can sometimes hang
     
-    NSError *error = [request error];
-    if (error) {
-        // No connection, so we need to quit.
-        NSLog(@"Get connection failed.");
-        
-        // We deleted local data, so notify user.
-        NSLog(@"No connection to the HvZ website");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection failed" message:@"Logout successful, but you have no connection to the website." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
-        [alert show];
-        
-        // Since we've cleared user information, we should segue and return
-        [self performSegueWithIdentifier:@"logoutSuccess" sender:self];
+    // Get the logout page of the site, so that our csrf validation token can be
+    // scraped from it.
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/logout/"];
+    NSString *token = [CRSFGetter getCRSFToken:url];
+    
+    // Check for error in getting token
+    if ([token isEqualToString:@"error"]) {
+        NSLog(@"Error in collecting CRSF token from website.");
         return;
     }
-    NSString *response = [request responseString];
-    
-    
-    // Parse the csrf token out of the html returned
-    NSRegularExpression *csrfToken = [NSRegularExpression regularExpressionWithPattern:@"<input type='hidden' name='csrfmiddlewaretoken' value='.*>"  options:0 error:NULL];
-    
-    NSRange rangeOfCell = [csrfToken rangeOfFirstMatchInString:response options:0 range:NSMakeRange(0, [response length])];
-    NSString *cell = [response substringWithRange:rangeOfCell];
-    NSRange tokenRange = NSMakeRange(55, 32); // The html is programmatically validated. I would not
-    // do this if I didn't moderate the site in question.
-    NSString *token = [cell substringWithRange:tokenRange];
-    NSLog(@"%@", token);
-    NSLog(@"Parsed string, about to construct request.");
     
     // Now we logout, using the token we just scraped
     ASIFormDataRequest *logoutAttempt = [ASIFormDataRequest requestWithURL:url];
@@ -80,7 +58,7 @@
     [logoutAttempt setPostValue:token forKey:@"csrfmiddlewaretoken"];
     [logoutAttempt startSynchronous];
     NSLog(@"Past second request");
-    error = [logoutAttempt error];
+    NSError *error = [logoutAttempt error];
     NSString *logoutResponse = [logoutAttempt responseString];
     
     // Check if we logged out correctly.
