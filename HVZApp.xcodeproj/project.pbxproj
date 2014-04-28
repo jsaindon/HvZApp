@@ -23,6 +23,8 @@
 		31FB268E18AED9510095DEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB266918AED9510095DEF0 /* Foundation.framework */; };
 		31FB269618AED9510095DEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31FB269418AED9510095DEF0 /* InfoPlist.strings */; };
 		31FB269918AED9510095DEF0 /* HVZAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB269818AED9510095DEF0 /* HVZAppTests.m */; };
+		931E4B421904BCBB001BB944 /* HVZNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931E4B411904BCBB001BB944 /* HVZNotificationsViewController.m */; };
+		931E4B4B190783E0001BB944 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 931E4B4A190783E0001BB944 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		93B4A04F18F9EC0200284DA9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4A04E18F9EC0200284DA9 /* libsqlite3.dylib */; };
 		93B4A05118F9EC0E00284DA9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4A05018F9EC0E00284DA9 /* CoreTelephony.framework */; };
 		93B4A05318F9EC1A00284DA9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4A05218F9EC1A00284DA9 /* CoreLocation.framework */; };
@@ -154,6 +156,10 @@
 		31FB269518AED9510095DEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31FB269718AED9510095DEF0 /* HVZAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVZAppTests.h; sourceTree = "<group>"; };
 		31FB269818AED9510095DEF0 /* HVZAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVZAppTests.m; sourceTree = "<group>"; };
+		931E4B401904BCBB001BB944 /* HVZNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVZNotificationsViewController.h; path = ../HVZNotificationsViewController.h; sourceTree = "<group>"; };
+		931E4B411904BCBB001BB944 /* HVZNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVZNotificationsViewController.m; path = ../HVZNotificationsViewController.m; sourceTree = "<group>"; };
+		931E4B49190783E0001BB944 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		931E4B4A190783E0001BB944 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		93B4A04E18F9EC0200284DA9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		93B4A05018F9EC0E00284DA9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		93B4A05218F9EC1A00284DA9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -508,6 +514,8 @@
 		31FB266D18AED9510095DEF0 /* HVZApp */ = {
 			isa = PBXGroup;
 			children = (
+				931E4B401904BCBB001BB944 /* HVZNotificationsViewController.h */,
+				931E4B411904BCBB001BB944 /* HVZNotificationsViewController.m */,
 				3170118B18C59C50002FCD1F /* HVZFeedViewController.h */,
 				3170118C18C59C50002FCD1F /* HVZFeedViewController.m */,
 				DAF8FD3B190780C200E69A5C /* CRSFGetter.h */,
@@ -926,6 +934,8 @@
 		DAB7A40918B9BB450018D85B /* json */ = {
 			isa = PBXGroup;
 			children = (
+				931E4B49190783E0001BB944 /* JSONKit.h */,
+				931E4B4A190783E0001BB944 /* JSONKit.m */,
 				DAB7A40A18B9BB6A0018D85B /* NSObject+SBJson.h */,
 				DAB7A40B18B9BB6A0018D85B /* NSObject+SBJson.m */,
 				DAB7A40C18B9BB6A0018D85B /* SBJson.h */,
@@ -1140,6 +1150,7 @@
 				31FB267818AED9510095DEF0 /* HVZAppDelegate.m in Sources */,
 				DAB7A74E18B9BC8F0018D85B /* ASIDownloadCache.m in Sources */,
 				DAB7A42A18B9BB6A0018D85B /* SBJsonStreamWriterAccumulator.m in Sources */,
+				931E4B421904BCBB001BB944 /* HVZNotificationsViewController.m in Sources */,
 				DAB7A75518B9BCAE0018D85B /* Reachability.m in Sources */,
 				DAB7A42618B9BB6A0018D85B /* SBJsonStreamParserAccumulator.m in Sources */,
 				93BB6BB418F9E909001D3EC2 /* UAPushSettingsSoundsViewController.m in Sources */,
@@ -1180,6 +1191,7 @@
 				93BB6BAD18F9E909001D3EC2 /* UALocationSettingsViewController.m in Sources */,
 				DAB7A42318B9BB6A0018D85B /* NSObject+SBJson.m in Sources */,
 				DA8BD36B18B4327F00E577D5 /* HVZLoginPageViewController.m in Sources */,
+				931E4B4B190783E0001BB944 /* JSONKit.m in Sources */,
 				93BB6BAC18F9E909001D3EC2 /* UALocationDemoAnnotation.m in Sources */,
 				DAB7A42918B9BB6A0018D85B /* SBJsonStreamWriter.m in Sources */,
 				DAB7A42718B9BB6A0018D85B /* SBJsonStreamParserAdapter.m in Sources */,
