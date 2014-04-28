@@ -70,8 +70,8 @@ const double STUN_TIME = 120;
     
     HVZRatioLabel.text = hvzRatioDisplayString;
     
-    // If player is zombie, gray out the feed button
-    BOOL zombie = [self checkZombie];
+    // If player is not a zombie, gray out the feed button and make it inaccessible
+    BOOL zombie = [self isZombie];
     
     if (zombie) {
         [FeedButton setEnabled:YES];
@@ -81,7 +81,7 @@ const double STUN_TIME = 120;
     }
 }
 
-- (BOOL)checkZombie {
+- (BOOL)isZombie {
     NSURL *url = [NSURL URLWithString:@"http://localhost:8000/api/currplayer"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request startSynchronous];
@@ -91,7 +91,7 @@ const double STUN_TIME = 120;
     // If the request fails, handle and stop
     if (error) {
         NSLog(@"Couldn't request player information from website");
-        return true;
+        return false;
     }
     
     NSData *responseData = [request responseData];
@@ -114,7 +114,7 @@ const double STUN_TIME = 120;
 }
 
 - (IBAction)StartTimer {
-    
+    // Initialize timer
     TimerButton.enabled = NO;
     startingTime = STUN_TIME;
     timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countDown) userInfo:nil repeats:YES];

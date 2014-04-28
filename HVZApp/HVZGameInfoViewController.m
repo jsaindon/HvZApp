@@ -79,6 +79,7 @@
     
     NSDictionary *playerDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:NULL];
     
+    // Determine whether player is a zombie or a human
     NSString *status;
     if ([[playerDict objectForKey:@"team"] isEqualToString:@"H"]) {
         status = @"Human";
@@ -86,6 +87,7 @@
         status = @"Zombie";
     }
     
+    // Set all the Text View objects to display the player information
     NSString *playerNameString = [NSString stringWithFormat:@"%@%@", @"Email: ", [playerDict objectForKey:@"email"]];
     NSString *playerStatusString = [NSString stringWithFormat:@"%@%@", @"Status: ", status];
     NSString *playerGradYearString = [NSString stringWithFormat:@"%@%@", @"Graduation Year: ", [playerDict objectForKey:@"gradyear"]];
@@ -121,6 +123,7 @@
     
     NSDictionary *gameDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:NULL];
     
+    // Set the game Text View objects to display the game data
     NSString *gameModString = [NSString stringWithFormat:@"%@%@", @"Current Mod: ", [gameDict objectForKey:@"currentmod"]];
     NSString *gameSeasonString = [NSString stringWithFormat:@"%@%@", @"Game: ", [gameDict objectForKey:@"season"]];
     
