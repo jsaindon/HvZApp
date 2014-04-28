@@ -66,6 +66,8 @@
     // Check for error in getting token
     if ([token isEqualToString:@"error"]) {
         NSLog(@"Error in collecting CRSF token from website.");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection failed" message:@"Either the website is down or you do not have internet coverage." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        [alert show];
         return;
     }
     
