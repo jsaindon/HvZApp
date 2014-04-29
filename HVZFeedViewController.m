@@ -78,7 +78,7 @@
 }
 
 - (IBAction)SubmitButtonPress:(id)sender {
-    // Awful evil hack
+    // Default submit values
     self.Day = @"0";
     self.Hour = @"05";
     self.Minute = @"00";
@@ -92,8 +92,6 @@
     feedcode = [feedcode capitalizedString];
     
     // Check if only allowed letters in the Feed Code text field
-    //BOOL valid = true;
-    //NSMutableCharacterSet *feedLetters = [NSMutableCharacterSet characterSetWithCharactersInString:@"ACELXNPOSTWZ"];
     
     if ([feedcode length] != 5) {
         NSLog(@"Feed code entered was not of proper length or uses invalid characters.");

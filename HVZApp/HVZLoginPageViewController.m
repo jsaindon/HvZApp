@@ -20,7 +20,6 @@
 @synthesize passwordInput;
 @synthesize username;
 @synthesize password;
-@synthesize StatusLine;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
