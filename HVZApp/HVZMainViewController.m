@@ -177,11 +177,8 @@ const double STUN_TIME = 120;
     
     // Determine whether player is an admin or not
     BOOL adminStatus;
-    if ([[playerDict objectForKey:@"admin"] isEqualToString:@"true"]) {
-        adminStatus = true;
-    } else {
-        adminStatus = false;
-    }
+    NSLog(@"Admin status: %@", [playerDict objectForKey:@"admin"]);
+    adminStatus = ([playerDict objectForKey:@"admin"]) ? true : false;
     
     if (adminStatus == false) {
         [UAInbox displayInboxInViewController:self.navigationController animated:YES];
