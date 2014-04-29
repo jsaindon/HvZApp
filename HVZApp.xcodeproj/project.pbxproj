@@ -118,6 +118,9 @@
 		DAB7A76318B9C44D0018D85B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7A76218B9C44D0018D85B /* libz.dylib */; };
 		DAF8FBC818FB404100E69A5C /* HVZGameInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF8FBC718FB404100E69A5C /* HVZGameInfoViewController.m */; };
 		DAF8FD3D190780C200E69A5C /* CRSFGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF8FD3C190780C200E69A5C /* CRSFGetter.m */; };
+		DAF8FD41190F4C3C00E69A5C /* slider_maximum.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF8FD3E190F4C3C00E69A5C /* slider_maximum.png */; };
+		DAF8FD42190F4C3C00E69A5C /* slider_minimum.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF8FD3F190F4C3C00E69A5C /* slider_minimum.png */; };
+		DAF8FD43190F4C3C00E69A5C /* slider_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF8FD40190F4C3C00E69A5C /* slider_tab.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -421,6 +424,9 @@
 		DAF8FBC718FB404100E69A5C /* HVZGameInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVZGameInfoViewController.m; sourceTree = "<group>"; };
 		DAF8FD3B190780C200E69A5C /* CRSFGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSFGetter.h; sourceTree = "<group>"; };
 		DAF8FD3C190780C200E69A5C /* CRSFGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSFGetter.m; sourceTree = "<group>"; };
+		DAF8FD3E190F4C3C00E69A5C /* slider_maximum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider_maximum.png; path = ../../../Downloads/CustomSliderExample/slider_maximum.png; sourceTree = "<group>"; };
+		DAF8FD3F190F4C3C00E69A5C /* slider_minimum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider_minimum.png; path = ../../../Downloads/CustomSliderExample/slider_minimum.png; sourceTree = "<group>"; };
+		DAF8FD40190F4C3C00E69A5C /* slider_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider_tab.png; path = ../../../Downloads/CustomSliderExample/slider_tab.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -539,6 +545,9 @@
 		31FB266E18AED9510095DEF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAF8FD3E190F4C3C00E69A5C /* slider_maximum.png */,
+				DAF8FD3F190F4C3C00E69A5C /* slider_minimum.png */,
+				DAF8FD40190F4C3C00E69A5C /* slider_tab.png */,
 				DAB522A518F3E29000FAF9C7 /* FeedButton.png */,
 				DAAD67DB18EA7FDA00487C90 /* HVZButton3.png */,
 				DAAD67D918EA7FCE00487C90 /* HVZButton2.png */,
@@ -1077,8 +1086,10 @@
 				93BB6BAB18F9E909001D3EC2 /* UAInboxMessageViewController.xib in Resources */,
 				93BB6A7318F9E1AE001D3EC2 /* AirshipConfig.plist in Resources */,
 				93BB6BC818F9E909001D3EC2 /* UAPushSettingsTagsViewController.xib in Resources */,
+				DAF8FD43190F4C3C00E69A5C /* slider_tab.png in Resources */,
 				31FB267C18AED9510095DEF0 /* Default@2x.png in Resources */,
 				93BB6BC018F9E909001D3EC2 /* UALocationSettingsViewController.xib in Resources */,
+				DAF8FD41190F4C3C00E69A5C /* slider_maximum.png in Resources */,
 				DAAD67DC18EA7FDA00487C90 /* HVZButton3.png in Resources */,
 				93BB6BBE18F9E909001D3EC2 /* top-detail.png in Resources */,
 				DAAD67DA18EA7FCE00487C90 /* HVZButton2.png in Resources */,
@@ -1095,6 +1106,7 @@
 				93BB6BC318F9E909001D3EC2 /* UAPushMoreSettingsView.xib in Resources */,
 				93BB6BC518F9E909001D3EC2 /* UAPushSettingsAliasView.xib in Resources */,
 				93BB6BAA18F9E909001D3EC2 /* UAInboxMessageListController.xib in Resources */,
+				DAF8FD42190F4C3C00E69A5C /* slider_minimum.png in Resources */,
 				93BB6BC718F9E909001D3EC2 /* UAPushSettingsSoundsViewController.xib in Resources */,
 				31FB267E18AED9510095DEF0 /* Default-568h@2x.png in Resources */,
 				DAB1396B18D151F2000A8B47 /* Rules.pdf in Resources */,

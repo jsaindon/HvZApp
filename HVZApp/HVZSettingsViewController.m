@@ -40,6 +40,22 @@
     redSlider.continuous = YES;
     greenSlider.continuous = YES;
     
+    // Change slider images to be more aesthetically pleasing
+    [self setSliderImages:redSlider];
+    [self setSliderImages:blueSlider];
+    [self setSliderImages:greenSlider];
+}
+
+- (void) setSliderImages:(UISlider*) slider
+{
+    [slider setThumbImage:[UIImage imageNamed:@"slider_tab.png"]
+                         forState:UIControlStateNormal];
+    [slider setThumbImage:[UIImage imageNamed:@"slider_tab.png"]
+                         forState:UIControlStateHighlighted];
+    [slider setMinimumTrackImage:[UIImage imageNamed:@"slider_minimum.png"]
+                                forState:UIControlStateNormal];
+    [slider setMaximumTrackImage:[UIImage imageNamed:@"slider_maximum.png"]
+                                forState:UIControlStateNormal];
 }
 
 - (void) viewWillAppear:(BOOL)animated{
