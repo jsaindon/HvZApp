@@ -10,6 +10,8 @@
 #import "ASIHTTPRequest.h" 
 #import "CRSFGetter.h"
 
+#import "UAInbox.h"
+
 @interface HVZMainViewController ()
 
 @end
@@ -21,6 +23,7 @@ const double STUN_TIME = 120;
 @synthesize TimerButton;
 @synthesize HVZRatioLabel;
 @synthesize FeedButton;
+@synthesize NotificationsButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -146,6 +149,51 @@ const double STUN_TIME = 120;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 
 }
+
+- (IBAction)NotificationClick {
+    
+    // Grab all data to check for mod status
+    // Retrieve username
+    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+    NSString *username = [storage objectForKey:@"username"];
+    
+    // Set up request
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/api/currplayer"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setUsername:username];
+    [request startSynchronous];
+    
+    NSError *error = [request error];
+    
+    // If the request fails, handle and stop
+    if (error) {
+        NSLog(@"Error executing request for player info");
+        return;
+    }
+    
+    NSData *responseData = [request responseData];
+    
+    NSDictionary *playerDict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:NULL];
+    
+    // Determine whether player is an admin or not
+    BOOL adminStatus;
+    if ([[playerDict objectForKey:@"admin"] isEqualToString:@"true"]) {
+        adminStatus = true;
+    } else {
+        adminStatus = false;
+    }
+    
+    if (adminStatus == false) {
+        [UAInbox displayInboxInViewController:self.navigationController animated:YES];
+        return;
+    } else {
+        [self performSegueWithIdentifier:@"mod" sender:self];
+    }
+    
+}
+
+
+
 
 - (void)countDown {
     startingTime -= 1;

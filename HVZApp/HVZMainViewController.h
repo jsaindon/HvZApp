@@ -18,9 +18,12 @@ const double STUN_TIME;
 
 // Main page
 - (IBAction)StartTimer;
+- (IBAction)NotificationClick;
 @property (weak, nonatomic) IBOutlet UIButton *TimerButton;
 @property (weak, nonatomic) IBOutlet UILabel *HVZRatioLabel;
 @property (weak, nonatomic) IBOutlet UIButton *FeedButton;
+@property (weak, nonatomic) IBOutlet UIButton *NotificationsButton;
+
 
 
 
