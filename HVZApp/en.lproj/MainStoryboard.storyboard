@@ -28,11 +28,35 @@
                                     <action selector="logoutButton:" destination="x9i-0o-8vg" eventType="touchUpInside" id="1m3-sE-b7C"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="yQ5-QG-XN5">
+                                <rect key="frame" x="47" y="415" width="226" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="x9i-0o-8vg" eventType="valueChanged" id="hJq-XA-rIJ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="Mlq-Cc-XRY">
+                                <rect key="frame" x="47" y="363" width="226" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="x9i-0o-8vg" eventType="valueChanged" id="tMB-Mw-Geu"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="Ua2-Yn-n7r">
+                                <rect key="frame" x="47" y="467" width="226" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="x9i-0o-8vg" eventType="valueChanged" id="JC2-J3-mon"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="hVG-Z6-ciZ"/>
                     <connections>
+                        <outlet property="blueSlider" destination="Mlq-Cc-XRY" id="UjK-dh-fot"/>
+                        <outlet property="greenSlider" destination="Ua2-Yn-n7r" id="u7b-im-d0a"/>
+                        <outlet property="redSlider" destination="yQ5-QG-XN5" id="gcE-Gl-W5r"/>
                         <segue destination="ImE-DJ-0ss" kind="push" identifier="logoutSuccess" id="43J-Y7-hir"/>
                     </connections>
                 </viewController>

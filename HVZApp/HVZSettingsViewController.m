@@ -16,6 +16,9 @@
 @end
 
 @implementation HVZSettingsViewController
+@synthesize redSlider;
+@synthesize blueSlider;
+@synthesize greenSlider;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +34,31 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
+    
+    // Set sliders to send continuous values
+    blueSlider.continuous = YES;
+    redSlider.continuous = YES;
+    greenSlider.continuous = YES;
+    
+}
+
+- (void) viewWillAppear:(BOOL)animated{
+    /* Set background color if color values are stored */
+    
+    // Retrieve background color values from storage
+    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+    
+    // Check if color values are stored - all should be stored or none are
+    if ([storage objectForKey:@"redValue"] == nil) {
+        return;
+    }
+    
+    CGFloat redVal = (CGFloat) [[storage objectForKey:@"redValue"] floatValue];
+    CGFloat blueVal = (CGFloat) [[storage objectForKey:@"blueValue"] floatValue];
+    CGFloat greenVal = (CGFloat) [[storage objectForKey:@"greenValue"] floatValue];
+    
+    // Change background color to reflect slider value
+    self.view.backgroundColor = [UIColor colorWithRed:redVal green:greenVal blue:blueVal alpha:1.0f];
 }
 
 - (IBAction)logoutButton:(id)sender {
@@ -39,6 +67,9 @@
     NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
     [storage removeObjectForKey:@"username"];
     [storage removeObjectForKey:@"password"];
+    [storage removeObjectForKey:@"redValue"];
+    [storage removeObjectForKey:@"blueValue"];
+    [storage removeObjectForKey:@"greenValue"];
     
     
     // Get the logout page of the site, so that our csrf validation token can be
@@ -82,6 +113,35 @@
     
     // Since we've cleared user information, we should always segue
     [self performSegueWithIdentifier:@"logoutSuccess" sender:self];
+}
+
+-(IBAction)sliderChanged:(id)sender
+{
+    CGFloat sliderMax = redSlider.maximumValue;
+    
+    UISlider *slider = (UISlider *) sender;
+    NSInteger sliderValue = lround(slider.value);
+    
+    CGFloat redVal = redSlider.value/sliderMax;
+    CGFloat greenVal = greenSlider.value/sliderMax;
+    CGFloat blueVal = blueSlider.value/sliderMax;
+    
+    if (slider == redSlider) {
+        redVal = sliderValue/sliderMax;
+    } else if (slider == blueSlider) {
+        blueVal = sliderValue/sliderMax;
+    } else {
+        greenVal = sliderValue/sliderMax;
+    }
+    
+    // Change background color to reflect slider value
+    self.view.backgroundColor = [UIColor colorWithRed:redVal green:greenVal blue:blueVal alpha:1.0f];
+    
+    // Store color values for other pages
+    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+    [storage setObject:[NSString stringWithFormat:@"%f", redVal] forKey:@"redValue"];
+    [storage setObject:[NSString stringWithFormat:@"%f", blueVal]  forKey:@"blueValue"];
+    [storage setObject:[NSString stringWithFormat:@"%f", greenVal]  forKey:@"greenValue"];
 }
 
 - (void)didReceiveMemoryWarning

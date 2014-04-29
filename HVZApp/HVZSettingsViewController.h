@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface HVZSettingsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISlider *redSlider;
+@property (weak, nonatomic) IBOutlet UISlider *blueSlider;
+@property (weak, nonatomic) IBOutlet UISlider *greenSlider;
 
 // Logout Button
 - (IBAction)logoutButton:(id)sender;

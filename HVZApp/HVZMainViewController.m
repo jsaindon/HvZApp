@@ -81,6 +81,25 @@ const double STUN_TIME = 120;
     }
 }
 
+- (void) viewWillAppear:(BOOL)animated{
+    /* Set background color if color values are stored */
+    
+    // Retrieve background color values from storage
+    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+    
+    // Check if color values are stored - all should be stored or none are
+    if ([storage objectForKey:@"redValue"] == nil) {
+        return;
+    }
+    
+    CGFloat redVal = (CGFloat) [[storage objectForKey:@"redValue"] floatValue];
+    CGFloat blueVal = (CGFloat) [[storage objectForKey:@"blueValue"] floatValue];
+    CGFloat greenVal = (CGFloat) [[storage objectForKey:@"greenValue"] floatValue];
+    
+    // Change background color to reflect slider value
+    self.view.backgroundColor = [UIColor colorWithRed:redVal green:greenVal blue:blueVal alpha:1.0f];
+}
+
 - (BOOL)isZombie {
     NSURL *url = [NSURL URLWithString:@"http://localhost:8000/api/currplayer"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
